@@ -50,13 +50,14 @@ namespace Warehouse_System
                 {
                     store.Name = StoreNameTB.Text;
                     store.Address = StoreAddressTB.Text;
-                    store.ManagerId = Convert.ToInt32(StoreManagerCB.SelectedItem);
+                    store.Manager = StoreManagerTB.Text;
 
                     db.Entry(store).State = store.Id == 0 ? EntityState.Added : EntityState.Modified;
                     db.SaveChanges();
                 }
                 MetroMessageBox.Show(this, "New Store has been added", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ShowStoreData();
+                store.Id = 0;
             }
             else
             {
@@ -76,25 +77,26 @@ namespace Warehouse_System
         {
             using (WarehouseDBEntities db = new WarehouseDBEntities())
             {
-                StoreDGV.DataSource = db.Stores.Include(a => a.Manger).Select(s => new
-                {
-                    s.Id,
-                    s.Name,
-                    s.Address,
-                    Manger = s.Manger.Name
-                }).ToList();
-                StoreManagerCB.DataSource = db.Mangers.Select(a => a.Id).ToList();
-                StoreManagerCB.SelectedItem = null;
-                StoreManagerCB.SelectedText = "  -------- Select Manager ID --------  ";
+                StoreDGV.DataSource = db.Stores.Select(s => new { s.Id, s.Name, s.Address, s.Manager }).ToList();
             }
 
-            StoreNameTB.Text = "";
-            StoreAddressTB.Text = "";
+            StoreNameTB.Text = StoreAddressTB.Text = StoreManagerTB.Text = "";
         }
 
         private void StoreDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (StoreDGV.CurrentRow.Index != -1)
+            {
+                store.Id = Convert.ToInt32(StoreDGV.CurrentRow.Cells["Id"].Value);
+                using (WarehouseDBEntities db = new WarehouseDBEntities())
+                {
+                    store = db.Stores.Where(s => s.Id == store.Id).FirstOrDefault();
 
+                    StoreNameTB.Text = store.Name;
+                    StoreAddressTB.Text = store.Address;
+                    StoreManagerTB.Text = store.Manager;
+                }
+            }
         }
         #endregion
 

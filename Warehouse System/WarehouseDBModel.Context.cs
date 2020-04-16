@@ -26,7 +26,6 @@ namespace Warehouse_System
         }
     
         public virtual DbSet<Item> Items { get; set; }
-        public virtual DbSet<Manger> Mangers { get; set; }
         public virtual DbSet<Permission_Item> Permission_Item { get; set; }
         public virtual DbSet<Permission> Permissions { get; set; }
         public virtual DbSet<Stakeholder> Stakeholders { get; set; }

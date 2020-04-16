@@ -24,9 +24,8 @@ namespace Warehouse_System
         public int Id { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
-        public int ManagerId { get; set; }
+        public string Manager { get; set; }
     
-        public virtual Manger Manger { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Permission> Permissions { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

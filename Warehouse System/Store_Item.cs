@@ -15,8 +15,8 @@ namespace Warehouse_System
     public partial class Store_Item
     {
         public int StoreId { get; set; }
-        public int ItemId { get; set; }
-        public string Extra { get; set; }
+        public int ItemCode { get; set; }
+        public string Quantity { get; set; }
     
         public virtual Item Item { get; set; }
         public virtual Store Store { get; set; }

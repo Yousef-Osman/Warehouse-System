@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="WarehouseDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="WarehouseDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Items">
           <Key>
             <PropertyRef Name="Code" />
@@ -15,16 +15,6 @@
           <Property Name="ProductionDate" Type="datetime" Nullable="false" />
           <Property Name="ExpDate" Type="datetime" Nullable="false" />
           <Property Name="SupplierId" Type="int" Nullable="false" />
-        </EntityType>
-        <EntityType Name="Mangers">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Name" Type="nchar" MaxLength="50" Nullable="false" />
-          <Property Name="Phone" Type="nchar" MaxLength="15" Nullable="false" />
-          <Property Name="Address" Type="nvarchar(max)" />
-          <Property Name="E-Mail" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="Permission_Item">
           <Key>
@@ -39,7 +29,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="StoreId" Type="int" Nullable="false" />
           <Property Name="PermissionDate" Type="datetime" Nullable="false" />
           <Property Name="PermissionType" Type="int" Nullable="false" />
@@ -60,11 +50,11 @@
         <EntityType Name="Store_Item">
           <Key>
             <PropertyRef Name="StoreId" />
-            <PropertyRef Name="ItemId" />
+            <PropertyRef Name="ItemCode" />
           </Key>
           <Property Name="StoreId" Type="int" Nullable="false" />
-          <Property Name="ItemId" Type="int" Nullable="false" />
-          <Property Name="Extra" Type="nchar" MaxLength="10" />
+          <Property Name="ItemCode" Type="int" Nullable="false" />
+          <Property Name="Quantity" Type="nchar" MaxLength="10" />
         </EntityType>
         <EntityType Name="Stores">
           <Key>
@@ -73,7 +63,7 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nchar" MaxLength="20" Nullable="false" />
           <Property Name="Address" Type="nchar" MaxLength="50" Nullable="false" />
-          <Property Name="ManagerId" Type="int" Nullable="false" />
+          <Property Name="Manager" Type="nchar" MaxLength="20" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -141,7 +131,7 @@
               <PropertyRef Name="Code" />
             </Principal>
             <Dependent Role="Store_Item">
-              <PropertyRef Name="ItemId" />
+              <PropertyRef Name="ItemCode" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -157,21 +147,8 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Stores_Mangers">
-          <End Role="Mangers" Type="Self.Mangers" Multiplicity="1" />
-          <End Role="Stores" Type="Self.Stores" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Mangers">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Stores">
-              <PropertyRef Name="ManagerId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="WarehouseDBModelStoreContainer">
           <EntitySet Name="Items" EntityType="Self.Items" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Mangers" EntityType="Self.Mangers" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Permission_Item" EntityType="Self.Permission_Item" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Permissions" EntityType="Self.Permissions" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Stakeholders" EntityType="Self.Stakeholders" Schema="dbo" store:Type="Tables" />
@@ -202,13 +179,8 @@
             <End Role="Stores" EntitySet="Stores" />
             <End Role="Store_Item" EntitySet="Store_Item" />
           </AssociationSet>
-          <AssociationSet Name="FK_Stores_Mangers" Association="Self.FK_Stores_Mangers">
-            <End Role="Mangers" EntitySet="Mangers" />
-            <End Role="Stores" EntitySet="Stores" />
-          </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="WarehouseDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -226,17 +198,6 @@
           <NavigationProperty Name="Permission_Item" Relationship="Self.FK_Permission_Item_Items" FromRole="Items" ToRole="Permission_Item" />
           <NavigationProperty Name="Store_Item" Relationship="Self.FK_Store_Item_Items" FromRole="Items" ToRole="Store_Item" />
         </EntityType>
-        <EntityType Name="Manger">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
-          <Property Name="Phone" Type="String" MaxLength="15" FixedLength="true" Unicode="true" Nullable="false" />
-          <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="E_Mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Stores" Relationship="Self.FK_Stores_Mangers" FromRole="Mangers" ToRole="Stores" />
-        </EntityType>
         <EntityType Name="Permission_Item">
           <Key>
             <PropertyRef Name="PermissionId" />
@@ -252,7 +213,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="StoreId" Type="Int32" Nullable="false" />
           <Property Name="PermissionDate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="PermissionType" Type="Int32" Nullable="false" />
@@ -276,11 +237,11 @@
         <EntityType Name="Store_Item">
           <Key>
             <PropertyRef Name="StoreId" />
-            <PropertyRef Name="ItemId" />
+            <PropertyRef Name="ItemCode" />
           </Key>
           <Property Name="StoreId" Type="Int32" Nullable="false" />
-          <Property Name="ItemId" Type="Int32" Nullable="false" />
-          <Property Name="Extra" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="ItemCode" Type="Int32" Nullable="false" />
+          <Property Name="Quantity" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
           <NavigationProperty Name="Item" Relationship="Self.FK_Store_Item_Items" FromRole="Store_Item" ToRole="Items" />
           <NavigationProperty Name="Store" Relationship="Self.FK_Store_Item_Stores" FromRole="Store_Item" ToRole="Stores" />
         </EntityType>
@@ -291,8 +252,7 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
           <Property Name="Address" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
-          <Property Name="ManagerId" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Manger" Relationship="Self.FK_Stores_Mangers" FromRole="Stores" ToRole="Mangers" />
+          <Property Name="Manager" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
           <NavigationProperty Name="Permissions" Relationship="Self.FK_Permissions_Stores" FromRole="Stores" ToRole="Permissions" />
           <NavigationProperty Name="Store_Item" Relationship="Self.FK_Store_Item_Stores" FromRole="Stores" ToRole="Store_Item" />
         </EntityType>
@@ -338,19 +298,7 @@
               <PropertyRef Name="Code" />
             </Principal>
             <Dependent Role="Store_Item">
-              <PropertyRef Name="ItemId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Stores_Mangers">
-          <End Role="Mangers" Type="Self.Manger" Multiplicity="1" />
-          <End Role="Stores" Type="Self.Store" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Mangers">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Stores">
-              <PropertyRef Name="ManagerId" />
+              <PropertyRef Name="ItemCode" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -392,7 +340,6 @@
         </Association>
         <EntityContainer Name="WarehouseDBEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Items" EntityType="Self.Item" />
-          <EntitySet Name="Mangers" EntityType="Self.Manger" />
           <EntitySet Name="Permission_Item" EntityType="Self.Permission_Item" />
           <EntitySet Name="Permissions" EntityType="Self.Permission" />
           <EntitySet Name="Stakeholders" EntityType="Self.Stakeholder" />
@@ -410,10 +357,6 @@
           <AssociationSet Name="FK_Store_Item_Items" Association="Self.FK_Store_Item_Items">
             <End Role="Items" EntitySet="Items" />
             <End Role="Store_Item" EntitySet="Store_Item" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Stores_Mangers" Association="Self.FK_Stores_Mangers">
-            <End Role="Mangers" EntitySet="Mangers" />
-            <End Role="Stores" EntitySet="Stores" />
           </AssociationSet>
           <AssociationSet Name="FK_Permission_Item_Permissions" Association="Self.FK_Permission_Item_Permissions">
             <End Role="Permissions" EntitySet="Permissions" />
@@ -443,17 +386,6 @@
                 <ScalarProperty Name="ProductionDate" ColumnName="ProductionDate" />
                 <ScalarProperty Name="ExpDate" ColumnName="ExpDate" />
                 <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Mangers">
-            <EntityTypeMapping TypeName="WarehouseDBModel.Manger">
-              <MappingFragment StoreEntitySet="Mangers">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Phone" ColumnName="Phone" />
-                <ScalarProperty Name="Address" ColumnName="Address" />
-                <ScalarProperty Name="E_Mail" ColumnName="E-Mail" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -494,8 +426,8 @@
             <EntityTypeMapping TypeName="WarehouseDBModel.Store_Item">
               <MappingFragment StoreEntitySet="Store_Item">
                 <ScalarProperty Name="StoreId" ColumnName="StoreId" />
-                <ScalarProperty Name="ItemId" ColumnName="ItemId" />
-                <ScalarProperty Name="Extra" ColumnName="Extra" />
+                <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -505,7 +437,7 @@
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Address" ColumnName="Address" />
-                <ScalarProperty Name="ManagerId" ColumnName="ManagerId" />
+                <ScalarProperty Name="Manager" ColumnName="Manager" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

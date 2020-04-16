@@ -71,45 +71,42 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Item.cs">
-      <DependentUpon>WarehouseDbModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Manger.cs">
-      <DependentUpon>WarehouseDbModel.tt</DependentUpon>
+      <DependentUpon>WarehouseDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Permission.cs">
-      <DependentUpon>WarehouseDbModel.tt</DependentUpon>
+      <DependentUpon>WarehouseDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Permission_Item.cs">
-      <DependentUpon>WarehouseDbModel.tt</DependentUpon>
+      <DependentUpon>WarehouseDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Stakeholder.cs">
-      <DependentUpon>WarehouseDbModel.tt</DependentUpon>
+      <DependentUpon>WarehouseDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Store.cs">
-      <DependentUpon>WarehouseDbModel.tt</DependentUpon>
+      <DependentUpon>WarehouseDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Store_Item.cs">
-      <DependentUpon>WarehouseDbModel.tt</DependentUpon>
+      <DependentUpon>WarehouseDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="sysdiagram.cs">
-      <DependentUpon>WarehouseDbModel.tt</DependentUpon>
+      <DependentUpon>WarehouseDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="WarehouseDbModel.Context.cs">
+    <Compile Include="WarehouseDBModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>WarehouseDbModel.Context.tt</DependentUpon>
+      <DependentUpon>WarehouseDBModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="WarehouseDbModel.cs">
+    <Compile Include="WarehouseDBModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>WarehouseDbModel.tt</DependentUpon>
+      <DependentUpon>WarehouseDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="WarehouseDbModel.Designer.cs">
+    <Compile Include="WarehouseDBModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>WarehouseDbModel.edmx</DependentUpon>
+      <DependentUpon>WarehouseDBModel.edmx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -134,12 +131,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EntityDeploy Include="WarehouseDbModel.edmx">
+    <EntityDeploy Include="WarehouseDBModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>WarehouseDbModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>WarehouseDBModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="WarehouseDbModel.edmx.diagram">
-      <DependentUpon>WarehouseDbModel.edmx</DependentUpon>
+    <None Include="WarehouseDBModel.edmx.diagram">
+      <DependentUpon>WarehouseDBModel.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -149,15 +146,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="WarehouseDbModel.Context.tt">
+    <Content Include="WarehouseDBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>WarehouseDbModel.edmx</DependentUpon>
-      <LastGenOutput>WarehouseDbModel.Context.cs</LastGenOutput>
+      <DependentUpon>WarehouseDBModel.edmx</DependentUpon>
+      <LastGenOutput>WarehouseDBModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="WarehouseDbModel.tt">
+    <Content Include="WarehouseDBModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>WarehouseDbModel.edmx</DependentUpon>
-      <LastGenOutput>WarehouseDbModel.cs</LastGenOutput>
+      <DependentUpon>WarehouseDBModel.edmx</DependentUpon>
+      <LastGenOutput>WarehouseDBModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

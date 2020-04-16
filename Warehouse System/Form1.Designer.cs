@@ -53,7 +53,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.StoreDGV = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.StoreManagerCB = new System.Windows.Forms.ComboBox();
             this.StoreMangerLabel = new System.Windows.Forms.Label();
             this.StoreAddresslabel = new System.Windows.Forms.Label();
             this.StoreAddressTB = new System.Windows.Forms.TextBox();
@@ -112,6 +111,7 @@
             this.StoreIntBtn = new System.Windows.Forms.Button();
             this.CustomerIntBtn = new System.Windows.Forms.Button();
             this.SupplierIntBtn = new System.Windows.Forms.Button();
+            this.StoreManagerTB = new System.Windows.Forms.TextBox();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StoreDGV)).BeginInit();
             this.panel2.SuspendLayout();
@@ -340,9 +340,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.StoreManagerCB);
             this.panel2.Controls.Add(this.StoreMangerLabel);
             this.panel2.Controls.Add(this.StoreAddresslabel);
+            this.panel2.Controls.Add(this.StoreManagerTB);
             this.panel2.Controls.Add(this.StoreAddressTB);
             this.panel2.Controls.Add(this.StoreNameLabel);
             this.panel2.Controls.Add(this.StoreNameTB);
@@ -351,30 +351,21 @@
             this.panel2.Size = new System.Drawing.Size(612, 291);
             this.panel2.TabIndex = 7;
             // 
-            // StoreManagerCB
-            // 
-            this.StoreManagerCB.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StoreManagerCB.FormattingEnabled = true;
-            this.StoreManagerCB.Location = new System.Drawing.Point(232, 198);
-            this.StoreManagerCB.Name = "StoreManagerCB";
-            this.StoreManagerCB.Size = new System.Drawing.Size(323, 36);
-            this.StoreManagerCB.TabIndex = 3;
-            // 
             // StoreMangerLabel
             // 
             this.StoreMangerLabel.AutoSize = true;
             this.StoreMangerLabel.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StoreMangerLabel.Location = new System.Drawing.Point(48, 199);
+            this.StoreMangerLabel.Location = new System.Drawing.Point(48, 196);
             this.StoreMangerLabel.Name = "StoreMangerLabel";
-            this.StoreMangerLabel.Size = new System.Drawing.Size(116, 29);
+            this.StoreMangerLabel.Size = new System.Drawing.Size(147, 29);
             this.StoreMangerLabel.TabIndex = 2;
-            this.StoreMangerLabel.Text = "Manger ID";
+            this.StoreMangerLabel.Text = "Store Manger";
             // 
             // StoreAddresslabel
             // 
             this.StoreAddresslabel.AutoSize = true;
             this.StoreAddresslabel.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StoreAddresslabel.Location = new System.Drawing.Point(48, 130);
+            this.StoreAddresslabel.Location = new System.Drawing.Point(48, 128);
             this.StoreAddresslabel.Name = "StoreAddresslabel";
             this.StoreAddresslabel.Size = new System.Drawing.Size(148, 29);
             this.StoreAddresslabel.TabIndex = 2;
@@ -384,7 +375,7 @@
             // 
             this.StoreAddressTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.StoreAddressTB.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StoreAddressTB.Location = new System.Drawing.Point(232, 128);
+            this.StoreAddressTB.Location = new System.Drawing.Point(232, 126);
             this.StoreAddressTB.Name = "StoreAddressTB";
             this.StoreAddressTB.Size = new System.Drawing.Size(323, 36);
             this.StoreAddressTB.TabIndex = 1;
@@ -1123,6 +1114,15 @@
             this.SupplierIntBtn.UseVisualStyleBackColor = false;
             this.SupplierIntBtn.Click += new System.EventHandler(this.StakeholderBtn_Click);
             // 
+            // StoreManagerTB
+            // 
+            this.StoreManagerTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.StoreManagerTB.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StoreManagerTB.Location = new System.Drawing.Point(232, 194);
+            this.StoreManagerTB.Name = "StoreManagerTB";
+            this.StoreManagerTB.Size = new System.Drawing.Size(323, 36);
+            this.StoreManagerTB.TabIndex = 1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -1180,7 +1180,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView StoreDGV;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox StoreManagerCB;
         private System.Windows.Forms.Label StoreMangerLabel;
         private System.Windows.Forms.Label StoreAddresslabel;
         private System.Windows.Forms.TextBox StoreAddressTB;
@@ -1239,6 +1238,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox ItemCodeTB;
         private System.Windows.Forms.DataGridView ItemDGV;
+        private System.Windows.Forms.TextBox StoreManagerTB;
     }
 }
 
