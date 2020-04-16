@@ -4,13 +4,12 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="WarehouseDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="WarehouseDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Items">
           <Key>
-            <PropertyRef Name="Id" />
+            <PropertyRef Name="Code" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Code" Type="nchar" MaxLength="20" Nullable="false" />
+          <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nchar" MaxLength="20" Nullable="false" />
           <Property Name="Unit" Type="nchar" MaxLength="20" Nullable="false" />
           <Property Name="ProductionDate" Type="datetime" Nullable="false" />
@@ -30,10 +29,10 @@
         <EntityType Name="Permission_Item">
           <Key>
             <PropertyRef Name="PermissionId" />
-            <PropertyRef Name="ItemId" />
+            <PropertyRef Name="ItemCode" />
           </Key>
           <Property Name="PermissionId" Type="int" Nullable="false" />
-          <Property Name="ItemId" Type="int" Nullable="false" />
+          <Property Name="ItemCode" Type="int" Nullable="false" />
           <Property Name="Quantity" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Permissions">
@@ -103,10 +102,10 @@
           <End Role="Permission_Item" Type="Self.Permission_Item" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Items">
-              <PropertyRef Name="Id" />
+              <PropertyRef Name="Code" />
             </Principal>
             <Dependent Role="Permission_Item">
-              <PropertyRef Name="ItemId" />
+              <PropertyRef Name="ItemCode" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -139,7 +138,7 @@
           <End Role="Store_Item" Type="Self.Store_Item" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Items">
-              <PropertyRef Name="Id" />
+              <PropertyRef Name="Code" />
             </Principal>
             <Dependent Role="Store_Item">
               <PropertyRef Name="ItemId" />
@@ -208,20 +207,20 @@
             <End Role="Stores" EntitySet="Stores" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="WarehouseDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Item">
           <Key>
-            <PropertyRef Name="Id" />
+            <PropertyRef Name="Code" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="Code" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Code" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
           <Property Name="Unit" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
-          <Property Name="ProductionDate" Type="DateTime" Precision="3" Nullable="false" />
-          <Property Name="ExpDate" Type="DateTime" Precision="3" Nullable="false" />
+          <Property Name="ProductionDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ExpDate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="SupplierId" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Stakeholder" Relationship="Self.FK_Items_suppliers_customers" FromRole="Items" ToRole="Stakeholders" />
           <NavigationProperty Name="Permission_Item" Relationship="Self.FK_Permission_Item_Items" FromRole="Items" ToRole="Permission_Item" />
@@ -241,10 +240,10 @@
         <EntityType Name="Permission_Item">
           <Key>
             <PropertyRef Name="PermissionId" />
-            <PropertyRef Name="ItemId" />
+            <PropertyRef Name="ItemCode" />
           </Key>
           <Property Name="PermissionId" Type="Int32" Nullable="false" />
-          <Property Name="ItemId" Type="Int32" Nullable="false" />
+          <Property Name="ItemCode" Type="Int32" Nullable="false" />
           <Property Name="Quantity" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Item" Relationship="Self.FK_Permission_Item_Items" FromRole="Permission_Item" ToRole="Items" />
           <NavigationProperty Name="Permission" Relationship="Self.FK_Permission_Item_Permissions" FromRole="Permission_Item" ToRole="Permissions" />
@@ -324,10 +323,10 @@
           <End Role="Permission_Item" Type="Self.Permission_Item" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Items">
-              <PropertyRef Name="Id" />
+              <PropertyRef Name="Code" />
             </Principal>
             <Dependent Role="Permission_Item">
-              <PropertyRef Name="ItemId" />
+              <PropertyRef Name="ItemCode" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -336,7 +335,7 @@
           <End Role="Store_Item" Type="Self.Store_Item" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Items">
-              <PropertyRef Name="Id" />
+              <PropertyRef Name="Code" />
             </Principal>
             <Dependent Role="Store_Item">
               <PropertyRef Name="ItemId" />
@@ -438,7 +437,6 @@
           <EntitySetMapping Name="Items">
             <EntityTypeMapping TypeName="WarehouseDBModel.Item">
               <MappingFragment StoreEntitySet="Items">
-                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Code" ColumnName="Code" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Unit" ColumnName="Unit" />
@@ -463,7 +461,7 @@
             <EntityTypeMapping TypeName="WarehouseDBModel.Permission_Item">
               <MappingFragment StoreEntitySet="Permission_Item">
                 <ScalarProperty Name="PermissionId" ColumnName="PermissionId" />
-                <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+                <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
                 <ScalarProperty Name="Quantity" ColumnName="Quantity" />
               </MappingFragment>
             </EntityTypeMapping>

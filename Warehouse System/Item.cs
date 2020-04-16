@@ -21,8 +21,7 @@ namespace Warehouse_System
             this.Store_Item = new HashSet<Store_Item>();
         }
     
-        public int Id { get; set; }
-        public string Code { get; set; }
+        public int Code { get; set; }
         public string Name { get; set; }
         public string Unit { get; set; }
         public System.DateTime ProductionDate { get; set; }

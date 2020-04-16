@@ -18,7 +18,6 @@ namespace Warehouse_System
         private Item item;
         private Stakeholder supplier;
         private Stakeholder customer;
-        //public enum shareHolderType1 = {supplier = 1; customer = 2;};
 
         public Form1()
         {
@@ -130,25 +129,29 @@ namespace Warehouse_System
 
         private void ItemAddBtn_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(StoreNameTB.Text) && !string.IsNullOrWhiteSpace(StoreAddressTB.Text))
+            if (!string.IsNullOrWhiteSpace(ItemCodeTB.Text) && !string.IsNullOrWhiteSpace(ItemNameTB.Text) && !string.IsNullOrWhiteSpace(ItemUnitTB.Text))
             {
                 using (WarehouseDBEntities db = new WarehouseDBEntities())
                 {
-                    store.Name = StoreNameTB.Text;
-                    store.Address = StoreAddressTB.Text;
-                    store.ManagerId = Convert.ToInt32(StoreManagerCB.SelectedItem);
+                    item.Code = Convert.ToInt32(ItemCodeTB.Text);
+                    item.Name = ItemNameTB.Text;
+                    item.Unit = ItemUnitTB.Text;
+                    item.ProductionDate = ItemPrdTP.Value;
+                    item.ExpDate = ItemExpTP.Value;
+                    item.SupplierId = Convert.ToInt32(ItemSpplierIdCB.SelectedItem);
 
-                    db.Entry(store).State = store.Id == 0 ? EntityState.Added : EntityState.Modified;
+                    db.Entry(item).State = item.Code == 0 ? EntityState.Added : EntityState.Modified;
                     db.SaveChanges();
                 }
-                MetroMessageBox.Show(this, "New Store has been added", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string proccess = item.Code == 0 ? "Added" : "Modified";
+                MetroMessageBox.Show(this, $"An Item has been {proccess}", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ShowStoreData();
-                item.Id = 0;
+                item.Code = 0;
             }
             else
             {
                 Button btn = (Button)sender;
-                if (btn.Name == "UpdateBtn")
+                if (btn.Name.Contains("Update"))
                 {
                     MetroMessageBox.Show(this, "Please fill the data to be updated or double click a row to update it", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -167,20 +170,34 @@ namespace Warehouse_System
 
                 ItemSpplierIdCB.DataSource = db.Stakeholders.Where(s => s.Role.Equals(1)).Select(s => s.Id).ToList();
                 ItemSpplierIdCB.SelectedItem = null;
-                ItemSpplierIdCB.SelectedText = "  ----- Select Manager ID -----  ";
+                ItemSpplierIdCB.SelectedText = "  -- Select Supplier ID --  ";
             }
 
             ItemNameTB.Text = ItemCodeTB.Text = ItemUnitTB.Text= "";
         }
-        #endregion
 
-        private void HideAllPanels()
+        private void ItemDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            HomePanel.Visible = false;
-            StorePanel.Visible = false;
-            ItemPanel.Visible = false;
-            StakeholderPanel.Visible = false;
+            if (SupplierDGV.CurrentRow.Index != -1)
+            {
+                item.Code = Convert.ToInt32(ItemDGV.CurrentRow.Cells["Code"].Value);
+                using (WarehouseDBEntities db = new WarehouseDBEntities())
+                {
+                    supplier = db.Stakeholders.Where(s => s.Id == supplier.Id).FirstOrDefault();
+
+                    ItemCodeTB.Text = item.Code.ToString();
+                    ItemNameTB.Text = item.Name;
+                    ItemUnitTB.Text = item.Unit;
+                    ItemPrdTP.Value = item.ProductionDate;
+                    ItemExpTP.Value = item.ExpDate;
+
+                    ItemSpplierIdCB.DataSource = db.Stakeholders.Where(s=>s.Role.Equals(1)).Select(s => s.Id).ToList();
+                    ItemSpplierIdCB.SelectedItem = null;
+                    ItemSpplierIdCB.SelectedText = item.SupplierId.ToString();
+                }
+            }
         }
+        #endregion
 
         #region Stakeholders EventHandler
         private void StakeholderBtn_Click(object sender, EventArgs e)
@@ -233,7 +250,8 @@ namespace Warehouse_System
                 }
 
                 string person = btn.Name.Contains("Supplier") ? "Supplier" : "Customer";
-                MetroMessageBox.Show(this, $"New {person} has been added", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string proccess = supplier.Id == 0 ? "Added" : "Modified";
+                MetroMessageBox.Show(this, $"A {person} has been {proccess}", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ShowStakeholdersData(role);
                 supplier.Id = 0;
             }
@@ -286,81 +304,12 @@ namespace Warehouse_System
 
         #endregion
 
-        //#region Customer EventHandler
-        //private void SupplierBtn_Click(object sender, EventArgs e)
-        //{
-        //    HideAllPanels();
-        //    SupplierPanel.Visible = true;
-        //    ShowStakeholdersData();
-        //}
-
-        //private void SupplierAddBtn_Click(object sender, EventArgs e)
-        //{
-        //    if (!string.IsNullOrWhiteSpace(SupplierNameTB.Text) && !string.IsNullOrWhiteSpace(SupplierPhoneTB.Text) && !string.IsNullOrWhiteSpace(SupplierEmailTB.Text))
-        //    {
-        //        using (WarehouseDBEntities db = new WarehouseDBEntities())
-        //        {
-        //            supplier.Name = SupplierNameTB.Text;
-        //            supplier.Phone = SupplierPhoneTB.Text;
-        //            supplier.E_Mail = SupplierEmailTB.Text;
-        //            supplier.LandLine = SupplierLandLineTB.Text;
-        //            supplier.Fax = SupplierFaxTB.Text;
-        //            supplier.WebSite = SupplierWebsiteTB.Text;
-        //            supplier.Role = 1;
-
-        //            db.Entry(supplier).State = supplier.Id == 0 ? EntityState.Added : EntityState.Modified;
-        //            db.SaveChanges();
-        //        }
-        //        MetroMessageBox.Show(this, "New Supplier has been added", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //        ShowStakeholdersData();
-        //        supplier.Id = 0;
-        //    }
-        //    else
-        //    {
-        //        Button btn = (Button)sender;
-        //        if (btn.Name == "SupplierUpdateBtn")
-        //        {
-        //            MetroMessageBox.Show(this, "Please fill the data to be updated or double click a row to update it", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //        }
-        //        else
-        //        {
-        //            MetroMessageBox.Show(this, "Please fill the data", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //        }
-        //    }
-        //}
-
-        //private void ShowStakeholdersData()
-        //{
-        //    using (WarehouseDBEntities db = new WarehouseDBEntities())
-        //    {
-        //        SupplierDGV.DataSource = db.Stakeholders
-        //            .Where(s => s.Role.Equals(1))
-        //            .Select(s => new { s.Id, s.Name, s.Phone, s.E_Mail, s.LandLine, s.Fax, s.WebSite })
-        //            .ToList();
-        //    }
-
-        //    SupplierNameTB.Text = SupplierPhoneTB.Text = SupplierEmailTB.Text = "";
-        //    SupplierLandLineTB.Text = SupplierFaxTB.Text = SupplierWebsiteTB.Text = "";
-        //}
-
-        //private void SupplierDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        //{
-        //    if (SupplierDGV.CurrentRow.Index != -1)
-        //    {
-        //        supplier.Id = Convert.ToInt32(SupplierDGV.CurrentRow.Cells["Id"].Value);
-        //        using (WarehouseDBEntities db = new WarehouseDBEntities())
-        //        {
-        //            supplier = db.Stakeholders.Where(s => s.Id == supplier.Id).FirstOrDefault();
-
-        //            SupplierNameTB.Text = supplier.Name;
-        //            SupplierPhoneTB.Text = supplier.Phone;
-        //            SupplierEmailTB.Text = supplier.E_Mail;
-        //            SupplierLandLineTB.Text = supplier.LandLine;
-        //            SupplierFaxTB.Text = supplier.Fax;
-        //            SupplierWebsiteTB.Text = supplier.WebSite;
-        //        }
-        //    }
-        //}
-        //#endregion
+        private void HideAllPanels()
+        {
+            HomePanel.Visible = false;
+            StorePanel.Visible = false;
+            ItemPanel.Visible = false;
+            StakeholderPanel.Visible = false;
+        }
     }
 }

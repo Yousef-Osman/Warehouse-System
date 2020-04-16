@@ -15,7 +15,7 @@ namespace Warehouse_System
     public partial class Permission_Item
     {
         public int PermissionId { get; set; }
-        public int ItemId { get; set; }
+        public int ItemCode { get; set; }
         public int Quantity { get; set; }
     
         public virtual Item Item { get; set; }
