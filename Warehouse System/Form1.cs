@@ -27,14 +27,7 @@ namespace Warehouse_System
             supplier = new Stakeholder();
             customer = new Stakeholder();
         }
-
         private void Form1_Load(object sender, EventArgs e)
-        {
-            HideAllPanels();
-            HomePanel.Visible = true;
-        }
-
-        private void LogoPanel_Click(object sender, EventArgs e)
         {
             HideAllPanels();
             HomePanel.Visible = true;
@@ -70,7 +63,7 @@ namespace Warehouse_System
                 Button btn = (Button)sender;
                 if (btn.Name == "UpdateBtn")
                 {
-                    MetroMessageBox.Show(this, "Please fill the data to be updated or double click a row to update it", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MetroMessageBox.Show(this, "Please fill the data to be updated or click on a row to update it", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
@@ -99,22 +92,9 @@ namespace Warehouse_System
             StoreAddressTB.Text = "";
         }
 
-        private void StoreDGV_DoubleClick(object sender, EventArgs e)
+        private void StoreDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (StoreDGV.CurrentRow.Index != -1)
-            {
-                store.Id = Convert.ToInt32(StoreDGV.CurrentRow.Cells["Id"].Value);
-                using (WarehouseDBEntities db = new WarehouseDBEntities())
-                {
-                    store = db.Stores.Where(s => s.Id == store.Id).FirstOrDefault();
 
-                    StoreNameTB.Text = store.Name;
-                    StoreAddressTB.Text = store.Address;
-                    StoreManagerCB.DataSource = db.Mangers.Select(a => a.Id).ToList();
-                    StoreManagerCB.SelectedItem = null;
-                    StoreManagerCB.SelectedText = store.ManagerId.ToString();
-                }
-            }
         }
         #endregion
 
@@ -124,16 +104,16 @@ namespace Warehouse_System
             HideAllPanels();
             ItemPanel.Visible = true;
             TitleLabel.Text = "Item Details";
+            ItemCodeTB.Enabled = false;
             ShowItemData();
         }
 
         private void ItemAddBtn_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(ItemCodeTB.Text) && !string.IsNullOrWhiteSpace(ItemNameTB.Text) && !string.IsNullOrWhiteSpace(ItemUnitTB.Text))
+            if (!string.IsNullOrWhiteSpace(ItemNameTB.Text) && !string.IsNullOrWhiteSpace(ItemUnitTB.Text))
             {
                 using (WarehouseDBEntities db = new WarehouseDBEntities())
                 {
-                    item.Code = Convert.ToInt32(ItemCodeTB.Text);
                     item.Name = ItemNameTB.Text;
                     item.Unit = ItemUnitTB.Text;
                     item.ProductionDate = ItemPrdTP.Value;
@@ -145,7 +125,7 @@ namespace Warehouse_System
                 }
                 string proccess = item.Code == 0 ? "Added" : "Modified";
                 MetroMessageBox.Show(this, $"An Item has been {proccess}", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ShowStoreData();
+                ShowItemData();
                 item.Code = 0;
             }
             else
@@ -153,7 +133,7 @@ namespace Warehouse_System
                 Button btn = (Button)sender;
                 if (btn.Name.Contains("Update"))
                 {
-                    MetroMessageBox.Show(this, "Please fill the data to be updated or double click a row to update it", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MetroMessageBox.Show(this, "Please fill the data to be updated or click on a row to update it", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
@@ -178,14 +158,15 @@ namespace Warehouse_System
 
         private void ItemDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (SupplierDGV.CurrentRow.Index != -1)
+            if (ItemDGV.CurrentRow.Index != -1)
             {
                 item.Code = Convert.ToInt32(ItemDGV.CurrentRow.Cells["Code"].Value);
                 using (WarehouseDBEntities db = new WarehouseDBEntities())
                 {
-                    supplier = db.Stakeholders.Where(s => s.Id == supplier.Id).FirstOrDefault();
+                    item = db.Items.Where(i => i.Code == item.Code).FirstOrDefault();
 
                     ItemCodeTB.Text = item.Code.ToString();
+                    ItemCodeTB.Enabled = false;
                     ItemNameTB.Text = item.Name;
                     ItemUnitTB.Text = item.Unit;
                     ItemPrdTP.Value = item.ProductionDate;
@@ -260,7 +241,7 @@ namespace Warehouse_System
                 Button btn = (Button)sender;
                 if (btn.Name.Contains("Update"))
                 {
-                    MetroMessageBox.Show(this, "Please fill the data to be updated or double click a row to update it", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MetroMessageBox.Show(this, "Please fill the data to be updated or click on a row to update it", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
@@ -304,6 +285,11 @@ namespace Warehouse_System
 
         #endregion
 
+        private void LogoPanel_Click(object sender, EventArgs e)
+        {
+            HideAllPanels();
+            HomePanel.Visible = true;
+        }
         private void HideAllPanels()
         {
             HomePanel.Visible = false;
