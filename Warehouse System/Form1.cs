@@ -18,6 +18,7 @@ namespace Warehouse_System
         private Item item;
         private Stakeholder supplier;
         private Permission permission;
+        private Permission_Item permission_Item;
 
         #region Common Functions
         public Form1()
@@ -27,6 +28,7 @@ namespace Warehouse_System
             item = new Item();
             supplier = new Stakeholder();
             permission = new Permission();
+            permission_Item = new Permission_Item();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -320,7 +322,17 @@ namespace Warehouse_System
         {
             using (WarehouseDBEntities db = new WarehouseDBEntities())
             {
-                ImportListDGV.DataSource = db.Permissions.Where(p => p.PermissionType.Equals(type)).Select(p => new { p.Id, p.StoreId, p.PermissionDate }).ToList();
+                ImportListDGV.DataSource = db.Permissions.Include(d=>d.Store).Where(p => p.PermissionType.Equals(type)).Select(p => new { Permission_Number = p.Id, Store_Name = p.Store.Name, Permission_Date = p.PermissionDate }).ToList();
+
+                //ImportListDGV.DataSource = (from p in db.Permissions
+                //                            join p_i in db.Permission_Item on p.Id equals p_i.PermissionId
+                //                            join i in db.Items on p_i.ItemCode equals i.Code
+                //                            where p.PermissionType == type
+                //                            select new { 
+                //                                PermissionId = p.Id,
+                //                                storeName = i.Name,
+                //                                p.PermissionDate
+                //                            }).ToList();
 
                 ImportStoreIdCB.DataSource = db.Stores.Select(s => s.Id).ToList();
             }
@@ -333,42 +345,36 @@ namespace Warehouse_System
 
         }
 
-        private void ImportDetailsBtn_Click(object sender, EventArgs e)
-        {
-            PerItemsTabPanel.Visible = false;
-            ImportDetailsPanel.Visible = true;
-            ShowImportItemsDetails();
-        }
-
         private void ShowImportItemsDetails()
         {
             using (WarehouseDBEntities db = new WarehouseDBEntities())
             {
-                ImportItemsDGV.DataSource = (from per in db.Permissions
-                                             join per_itm in db.Permission_Item on per.Id equals per_itm.PermissionId
-                                             join item in db.Items on per_itm.ItemCode equals item.Code
+                ImportItemsDGV.DataSource = (from p in db.Permissions
+                                             join p_i in db.Permission_Item on p.Id equals p_i.PermissionId
+                                             join i in db.Items on p_i.ItemCode equals i.Code
+                                             join s in db.Stakeholders on i.SupplierId equals s.Id
                                              select new
                                              {
-                                                 ItemCode = item.Code,
-                                                 ItemName = item.Name,
-                                                 ItemUnit = item.Unit,
-                                                 item.ProductionDate,
-                                                 item.ExpDate,
-                                                 item.SupplierId,
-                                                 per_itm.Quantity
+                                                 Item_Code = i.Code,
+                                                 Item_Name = i.Name,
+                                                 Production_Date = i.ProductionDate,
+                                                 Expiration_Date = i.ExpDate,
+                                                 Supplier_Name = s.Name,
+                                                 p_i.Quantity
                                              }).ToList();
 
                 ImportItemCodeCB.DataSource = db.Items.Select(s => s.Code).ToList();
             }
+            ImportPermissionIdTB.Text = permission.Id.ToString();
             ImportItemCodeCB.SelectedItem = null;
             ImportItemCodeCB.SelectedText = "      ------- Select Item Code -------    ";
-            ImportPermissionId.Enabled = false;
         }
 
         private void ImportBackBtn_Click(object sender, EventArgs e)
         {
             ImportDetailsPanel.Visible = false;
             PerItemsTabPanel.Visible = true;
+            permission.Id = 0;
             ShowImportData(1);
         }
         #endregion
@@ -387,5 +393,54 @@ namespace Warehouse_System
             ReportReviewPanel.Visible = true;
         }
         #endregion
+
+        private void ImportAddItemBtn_Click(object sender, EventArgs e)
+        {
+            if (ImportItemQtyIUD.Value != 0 && ImportItemCodeCB.Text != "      ------- Select Item Code -------    ")
+            {
+                Button btn = (Button)sender;
+
+                using (WarehouseDBEntities db = new WarehouseDBEntities())
+                {
+                    permission_Item.PermissionId = Convert.ToInt32(ImportPermissionIdTB.Text);
+                    permission_Item.ItemCode = Convert.ToInt32(ImportItemCodeCB.Text);
+                    permission_Item.Quantity = Convert.ToInt32(ImportItemQtyIUD.Value);
+
+                    var item = db.Permission_Item.Where(a => a.PermissionId == permission_Item.PermissionId && a.ItemCode == permission_Item.ItemCode).FirstOrDefault();
+
+                    bool exists = item != null ? true : false;
+
+                    db.Entry(permission_Item).State = exists == false ? EntityState.Added : EntityState.Modified;
+                    db.SaveChanges();
+                }
+
+                string proccess = supplier.Id == 0 ? "Added" : "Modified";
+                MetroMessageBox.Show(this, $"An Item has been {proccess}", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ShowImportItemsDetails();
+                
+            }
+            else
+            {
+                Button btn = (Button)sender;
+                if (btn.Name.Contains("Update"))
+                {
+                    MetroMessageBox.Show(this, "Please fill the data to be updated or click on a row to update it", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MetroMessageBox.Show(this, "Please fill the data", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void ImportListDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int PerNo = Convert.ToInt32(ImportListDGV.CurrentRow.Cells["Permission_Number"].Value);
+            permission.Id = PerNo;
+            ImportPermissionItemsLabel.Text = $"Items in Permission Number [{PerNo}]";
+            PerItemsTabPanel.Visible = false;
+            ImportDetailsPanel.Visible = true;
+            ShowImportItemsDetails();
+        }
     }
 }
