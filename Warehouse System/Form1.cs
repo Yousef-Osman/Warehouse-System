@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -313,31 +314,23 @@ namespace Warehouse_System
             HideAllPanels();
             PermissionsPanel.Visible = true;
             TitleLabel.Text = "Permissions Details";
-            ShowImportData(1);
+            ShowImportData();
             ImportDetailsPanel.Visible = false;
             PerItemsTabPanel.Visible = true;
         }
 
-        private void ShowImportData(int type)
+        private void ShowImportData()
         {
             using (WarehouseDBEntities db = new WarehouseDBEntities())
             {
-                ImportListDGV.DataSource = db.Permissions.Include(d=>d.Store).Where(p => p.PermissionType.Equals(type)).Select(p => new { Permission_Number = p.Id, Store_Name = p.Store.Name, Permission_Date = p.PermissionDate }).ToList();
+                ImportListDGV.DataSource = db.Permissions.Include(d=>d.Store).Where(p => p.PermissionType.Equals(1)).Select(p => new { Permission_Number = p.Id, Store_Name = p.Store.Name, Permission_Date = p.PermissionDate }).ToList();
 
-                //ImportListDGV.DataSource = (from p in db.Permissions
-                //                            join p_i in db.Permission_Item on p.Id equals p_i.PermissionId
-                //                            join i in db.Items on p_i.ItemCode equals i.Code
-                //                            where p.PermissionType == type
-                //                            select new { 
-                //                                PermissionId = p.Id,
-                //                                storeName = i.Name,
-                //                                p.PermissionDate
-                //                            }).ToList();
+                ExportListDGV.DataSource = db.Permissions.Include(d => d.Store).Where(p => p.PermissionType.Equals(2)).Select(p => new { Permission_Number = p.Id, Store_Name = p.Store.Name, Permission_Date = p.PermissionDate }).ToList();
 
-                ImportStoreIdCB.DataSource = db.Stores.Select(s => s.Id).ToList();
+                ImportStoreIdCB.DataSource = ExportStoreIdCB.DataSource = db.Stores.Select(s => s.Id).ToList();
             }
-            ImportStoreIdCB.SelectedItem = null;
-            ImportStoreIdCB.SelectedText = "        ------- Select Store ID -------      ";
+            ImportStoreIdCB.SelectedItem = ExportStoreIdCB.SelectedItem = null;
+            ImportStoreIdCB.SelectedText = ExportStoreIdCB.SelectedText = "        ------- Select Store ID -------      ";
         }
 
         private void ImportAddBtn_Click(object sender, EventArgs e)
@@ -345,6 +338,19 @@ namespace Warehouse_System
 
         }
 
+        private void ImportListDGV_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int PerNo = Convert.ToInt32(ImportListDGV.CurrentRow.Cells["Permission_Number"].Value);
+            permission.Id = PerNo;
+            ImportPermissionItemsLabel.Text = $"Items in Permission Number [{PerNo}]";
+            PerItemsTabPanel.Visible = false;
+            ImportDetailsPanel.Visible = true;
+            ShowImportItemsDetails();
+        }
+
+        /// <summary>
+        /// Event handlers for the items inside each permission
+        /// </summary>
         private void ShowImportItemsDetails()
         {
             using (WarehouseDBEntities db = new WarehouseDBEntities())
@@ -370,12 +376,54 @@ namespace Warehouse_System
             ImportItemCodeCB.SelectedText = "      ------- Select Item Code -------    ";
         }
 
+        private void ImportAddItemBtn_Click(object sender, EventArgs e)
+        {
+            if (ImportItemQtyIUD.Value != 0 && ImportItemCodeCB.Text != "      ------- Select Item Code -------    ")
+            {
+                Button btn = (Button)sender;
+
+                using (WarehouseDBEntities db = new WarehouseDBEntities())
+                {
+                    permission_Item.PermissionId = Convert.ToInt32(ImportPermissionIdTB.Text);
+                    permission_Item.ItemCode = Convert.ToInt32(ImportItemCodeCB.Text);
+                    permission_Item.Quantity = Convert.ToInt32(ImportItemQtyIUD.Value);
+
+                    db.Permission_Item.AddOrUpdate(permission_Item);
+                    db.SaveChanges();
+                }
+
+                string proccess = supplier.Id == 0 ? "Added" : "Modified";
+                MetroMessageBox.Show(this, $"An Item has been {proccess}", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ShowImportItemsDetails();
+
+            }
+            else
+            {
+                Button btn = (Button)sender;
+                if (btn.Name.Contains("Update"))
+                {
+                    MetroMessageBox.Show(this, "Please fill the data to be updated or click on a row to update it", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MetroMessageBox.Show(this, "Please fill the data", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void ImportItemsDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            permission_Item.PermissionId = Convert.ToInt32(ImportPermissionIdTB.Text);
+            ImportItemCodeCB.Text = (ImportItemsDGV.CurrentRow.Cells["Item_Code"].Value).ToString();
+            ImportItemQtyIUD.Value = Convert.ToInt32(ImportItemsDGV.CurrentRow.Cells["Quantity"].Value);
+        }
+
         private void ImportBackBtn_Click(object sender, EventArgs e)
         {
             ImportDetailsPanel.Visible = false;
             PerItemsTabPanel.Visible = true;
             permission.Id = 0;
-            ShowImportData(1);
+            ShowImportData();
         }
         #endregion
 
@@ -393,54 +441,5 @@ namespace Warehouse_System
             ReportReviewPanel.Visible = true;
         }
         #endregion
-
-        private void ImportAddItemBtn_Click(object sender, EventArgs e)
-        {
-            if (ImportItemQtyIUD.Value != 0 && ImportItemCodeCB.Text != "      ------- Select Item Code -------    ")
-            {
-                Button btn = (Button)sender;
-
-                using (WarehouseDBEntities db = new WarehouseDBEntities())
-                {
-                    permission_Item.PermissionId = Convert.ToInt32(ImportPermissionIdTB.Text);
-                    permission_Item.ItemCode = Convert.ToInt32(ImportItemCodeCB.Text);
-                    permission_Item.Quantity = Convert.ToInt32(ImportItemQtyIUD.Value);
-
-                    var item = db.Permission_Item.Where(a => a.PermissionId == permission_Item.PermissionId && a.ItemCode == permission_Item.ItemCode).FirstOrDefault();
-
-                    bool exists = item != null ? true : false;
-
-                    db.Entry(permission_Item).State = exists == false ? EntityState.Added : EntityState.Modified;
-                    db.SaveChanges();
-                }
-
-                string proccess = supplier.Id == 0 ? "Added" : "Modified";
-                MetroMessageBox.Show(this, $"An Item has been {proccess}", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ShowImportItemsDetails();
-                
-            }
-            else
-            {
-                Button btn = (Button)sender;
-                if (btn.Name.Contains("Update"))
-                {
-                    MetroMessageBox.Show(this, "Please fill the data to be updated or click on a row to update it", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    MetroMessageBox.Show(this, "Please fill the data", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
-
-        private void ImportListDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int PerNo = Convert.ToInt32(ImportListDGV.CurrentRow.Cells["Permission_Number"].Value);
-            permission.Id = PerNo;
-            ImportPermissionItemsLabel.Text = $"Items in Permission Number [{PerNo}]";
-            PerItemsTabPanel.Visible = false;
-            ImportDetailsPanel.Visible = true;
-            ShowImportItemsDetails();
-        }
     }
 }
