@@ -17,28 +17,45 @@ namespace Warehouse_System
         private Store store;
         private Item item;
         private Stakeholder supplier;
-        private Stakeholder customer;
+        private Permission permission;
 
+        #region Common Functions
         public Form1()
         {
             InitializeComponent();
             store = new Store();
             item = new Item();
             supplier = new Stakeholder();
-            customer = new Stakeholder();
+            permission = new Permission();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
             HideAllPanels();
             HomePanel.Visible = true;
         }
+        private void LogoPanel_Click(object sender, EventArgs e)
+        {
+            HideAllPanels();
+            HomePanel.Visible = true;
+        }
+        private void HideAllPanels()
+        {
+            HomePanel.Visible = false;
+            StorePanel.Visible = false;
+            ItemPanel.Visible = false;
+            StakeholderPanel.Visible = false;
+            PermissionsPanel.Visible = false;
+            ReportsPanel.Visible = false;
+            ReportReviewPanel.Visible = false;
+        }
+        #endregion
 
         #region Store EventHandlers
         private void StoreBtn_Click(object sender, EventArgs e)
         {
             HideAllPanels();
             StorePanel.Visible = true;
-            TitleLabel.Text = "Store Details";
+            TitleLabel.Text = "Stores Details";
             ShowStoreData();
         }
 
@@ -105,7 +122,7 @@ namespace Warehouse_System
         {
             HideAllPanels();
             ItemPanel.Visible = true;
-            TitleLabel.Text = "Item Details";
+            TitleLabel.Text = "Items Details";
             ItemCodeTB.Enabled = false;
             ShowItemData();
         }
@@ -155,7 +172,7 @@ namespace Warehouse_System
                 ItemSpplierIdCB.SelectedText = "  -- Select Supplier ID --  ";
             }
 
-            ItemNameTB.Text = ItemCodeTB.Text = ItemUnitTB.Text= "";
+            ItemNameTB.Text = ItemCodeTB.Text = ItemUnitTB.Text = "";
         }
 
         private void ItemDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -174,7 +191,7 @@ namespace Warehouse_System
                     ItemPrdTP.Value = item.ProductionDate;
                     ItemExpTP.Value = item.ExpDate;
 
-                    ItemSpplierIdCB.DataSource = db.Stakeholders.Where(s=>s.Role.Equals(1)).Select(s => s.Id).ToList();
+                    ItemSpplierIdCB.DataSource = db.Stakeholders.Where(s => s.Role.Equals(1)).Select(s => s.Id).ToList();
                     ItemSpplierIdCB.SelectedItem = null;
                     ItemSpplierIdCB.SelectedText = item.SupplierId.ToString();
                 }
@@ -194,14 +211,14 @@ namespace Warehouse_System
             if (btn.Name.Contains("Supplier"))
             {
                 role = 1;
-                title = "Suplier Details";
+                title = "Supliers Details";
                 CustomerBtnsPanel.Visible = false;
                 SupplierBtnsPanel.Visible = true;
             }
             else
             {
                 role = 2;
-                title = "Customer Details";
+                title = "Customers Details";
                 SupplierBtnsPanel.Visible = false;
                 CustomerBtnsPanel.Visible = true;
             }
@@ -287,17 +304,86 @@ namespace Warehouse_System
 
         #endregion
 
-        private void LogoPanel_Click(object sender, EventArgs e)
+        #region Permissions EventHandler
+        private void PermissionsBtn_Click(object sender, EventArgs e)
         {
             HideAllPanels();
-            HomePanel.Visible = true;
+            PermissionsPanel.Visible = true;
+            TitleLabel.Text = "Permissions Details";
+            ShowImportData(1);
+            ImportDetailsPanel.Visible = false;
+            PerItemsTabPanel.Visible = true;
         }
-        private void HideAllPanels()
+
+        private void ShowImportData(int type)
         {
-            HomePanel.Visible = false;
-            StorePanel.Visible = false;
-            ItemPanel.Visible = false;
-            StakeholderPanel.Visible = false;
+            using (WarehouseDBEntities db = new WarehouseDBEntities())
+            {
+                ImportListDGV.DataSource = db.Permissions.Where(p => p.PermissionType.Equals(type)).Select(p => new { p.Id, p.StoreId, p.PermissionDate }).ToList();
+
+                ImportStoreIdCB.DataSource = db.Stores.Select(s => s.Id).ToList();
+            }
+            ImportStoreIdCB.SelectedItem = null;
+            ImportStoreIdCB.SelectedText = "        ------- Select Store ID -------      ";
         }
+
+        private void ImportAddBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImportDetailsBtn_Click(object sender, EventArgs e)
+        {
+            PerItemsTabPanel.Visible = false;
+            ImportDetailsPanel.Visible = true;
+            ShowImportItemsDetails();
+        }
+
+        private void ShowImportItemsDetails()
+        {
+            using (WarehouseDBEntities db = new WarehouseDBEntities())
+            {
+                ImportItemsDGV.DataSource = (from per in db.Permissions
+                                             join per_itm in db.Permission_Item on per.Id equals per_itm.PermissionId
+                                             join item in db.Items on per_itm.ItemCode equals item.Code
+                                             select new
+                                             {
+                                                 ItemCode = item.Code,
+                                                 ItemName = item.Name,
+                                                 ItemUnit = item.Unit,
+                                                 item.ProductionDate,
+                                                 item.ExpDate,
+                                                 item.SupplierId,
+                                                 per_itm.Quantity
+                                             }).ToList();
+
+                ImportItemCodeCB.DataSource = db.Items.Select(s => s.Code).ToList();
+            }
+            ImportItemCodeCB.SelectedItem = null;
+            ImportItemCodeCB.SelectedText = "      ------- Select Item Code -------    ";
+            ImportPermissionId.Enabled = false;
+        }
+
+        private void ImportBackBtn_Click(object sender, EventArgs e)
+        {
+            ImportDetailsPanel.Visible = false;
+            PerItemsTabPanel.Visible = true;
+            ShowImportData(1);
+        }
+        #endregion
+
+        #region Reports EventHandlers
+        private void ReportsBtn_Click(object sender, EventArgs e)
+        {
+            HideAllPanels();
+            ReportsPanel.Visible = true;
+        }
+
+        private void ReportReviewBtn_Click(object sender, EventArgs e)
+        {
+            HideAllPanels();
+            ReportReviewPanel.Visible = true;
+        }
+        #endregion
     }
 }
