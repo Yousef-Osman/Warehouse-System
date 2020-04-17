@@ -35,6 +35,7 @@ namespace Warehouse_System
         }
         private void LogoPanel_Click(object sender, EventArgs e)
         {
+            TitleLabel.Text = "Home";
             HideAllPanels();
             HomePanel.Visible = true;
         }
@@ -376,6 +377,7 @@ namespace Warehouse_System
         private void ReportsBtn_Click(object sender, EventArgs e)
         {
             HideAllPanels();
+            TitleLabel.Text = "Reports";
             ReportsPanel.Visible = true;
         }
 

@@ -41,14 +41,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.LogoPanel = new MetroFramework.Controls.MetroPanel();
             this.ReportsBtn = new System.Windows.Forms.Button();
@@ -121,18 +121,6 @@
             this.InterfaceCustomerBtn = new System.Windows.Forms.Button();
             this.InterfaceSupplierBtn = new System.Windows.Forms.Button();
             this.PermissionsPanel = new MetroFramework.Controls.MetroPanel();
-            this.ImportDetailsPanel = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.ImportBackBtn = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.ImportItemCodeCB = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.ImportItemsDGV = new System.Windows.Forms.DataGridView();
             this.PerItemsTabPanel = new MetroFramework.Controls.MetroTabControl();
             this.ImportTab = new MetroFramework.Controls.MetroTabPage();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -147,22 +135,34 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.ImportListDGV = new System.Windows.Forms.DataGridView();
             this.ExportTab = new MetroFramework.Controls.MetroTabPage();
+            this.ImportDetailsPanel = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.ImportBackBtn = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.panel11 = new System.Windows.Forms.Panel();
             this.ImportPermissionId = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ImportItemCodeCB = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.ImportItemsDGV = new System.Windows.Forms.DataGridView();
             this.ReportsPanel = new MetroFramework.Controls.MetroPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label20 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
             this.ReportReviewPanel = new MetroFramework.Controls.MetroPanel();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.metroPanel1.SuspendLayout();
             this.StorePanel.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -180,17 +180,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.SupplierDGV)).BeginInit();
             this.HomePanel.SuspendLayout();
             this.PermissionsPanel.SuspendLayout();
-            this.ImportDetailsPanel.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImportItemsDGV)).BeginInit();
             this.PerItemsTabPanel.SuspendLayout();
             this.ImportTab.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImportListDGV)).BeginInit();
+            this.ImportDetailsPanel.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImportItemsDGV)).BeginInit();
             this.ReportsPanel.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel16.SuspendLayout();
@@ -1212,174 +1212,6 @@
             this.PermissionsPanel.VerticalScrollbarHighlightOnWheel = false;
             this.PermissionsPanel.VerticalScrollbarSize = 10;
             // 
-            // ImportDetailsPanel
-            // 
-            this.ImportDetailsPanel.Controls.Add(this.label17);
-            this.ImportDetailsPanel.Controls.Add(this.panel10);
-            this.ImportDetailsPanel.Controls.Add(this.panel11);
-            this.ImportDetailsPanel.Controls.Add(this.panel15);
-            this.ImportDetailsPanel.Location = new System.Drawing.Point(20, 21);
-            this.ImportDetailsPanel.Name = "ImportDetailsPanel";
-            this.ImportDetailsPanel.Size = new System.Drawing.Size(1151, 682);
-            this.ImportDetailsPanel.TabIndex = 9;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Controls.Add(this.ImportBackBtn);
-            this.panel10.Controls.Add(this.button2);
-            this.panel10.Controls.Add(this.button3);
-            this.panel10.Location = new System.Drawing.Point(694, 418);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(434, 241);
-            this.panel10.TabIndex = 11;
-            // 
-            // ImportBackBtn
-            // 
-            this.ImportBackBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            this.ImportBackBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ImportBackBtn.FlatAppearance.BorderSize = 0;
-            this.ImportBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ImportBackBtn.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ImportBackBtn.ForeColor = System.Drawing.Color.White;
-            this.ImportBackBtn.Location = new System.Drawing.Point(132, 158);
-            this.ImportBackBtn.Name = "ImportBackBtn";
-            this.ImportBackBtn.Size = new System.Drawing.Size(170, 50);
-            this.ImportBackBtn.TabIndex = 0;
-            this.ImportBackBtn.Text = "Back";
-            this.ImportBackBtn.UseVisualStyleBackColor = false;
-            this.ImportBackBtn.Click += new System.EventHandler(this.ImportBackBtn_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(132, 97);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(170, 50);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(132, 36);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(170, 50);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Add";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.White;
-            this.panel11.Controls.Add(this.ImportPermissionId);
-            this.panel11.Controls.Add(this.textBox1);
-            this.panel11.Controls.Add(this.ImportItemCodeCB);
-            this.panel11.Controls.Add(this.label1);
-            this.panel11.Controls.Add(this.label16);
-            this.panel11.Controls.Add(this.label15);
-            this.panel11.Location = new System.Drawing.Point(23, 418);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(612, 241);
-            this.panel11.TabIndex = 12;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(237, 172);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(323, 36);
-            this.textBox1.TabIndex = 6;
-            // 
-            // ImportItemCodeCB
-            // 
-            this.ImportItemCodeCB.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
-            this.ImportItemCodeCB.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ImportItemCodeCB.FormattingEnabled = true;
-            this.ImportItemCodeCB.Location = new System.Drawing.Point(237, 104);
-            this.ImportItemCodeCB.Name = "ImportItemCodeCB";
-            this.ImportItemCodeCB.Size = new System.Drawing.Size(323, 36);
-            this.ImportItemCodeCB.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(53, 108);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 29);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Item Code";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(53, 176);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(99, 29);
-            this.label16.TabIndex = 2;
-            this.label16.Text = "Quantity";
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.White;
-            this.panel15.Controls.Add(this.ImportItemsDGV);
-            this.panel15.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel15.Location = new System.Drawing.Point(23, 71);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(1105, 309);
-            this.panel15.TabIndex = 10;
-            // 
-            // ImportItemsDGV
-            // 
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ImportItemsDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
-            this.ImportItemsDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.ImportItemsDGV.BackgroundColor = System.Drawing.Color.White;
-            this.ImportItemsDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ImportItemsDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ImportItemsDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
-            this.ImportItemsDGV.ColumnHeadersHeight = 40;
-            this.ImportItemsDGV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ImportItemsDGV.EnableHeadersVisualStyles = false;
-            this.ImportItemsDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            this.ImportItemsDGV.Location = new System.Drawing.Point(48, 47);
-            this.ImportItemsDGV.Name = "ImportItemsDGV";
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ImportItemsDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
-            this.ImportItemsDGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ImportItemsDGV.RowsDefaultCellStyle = dataGridViewCellStyle20;
-            this.ImportItemsDGV.RowTemplate.Height = 26;
-            this.ImportItemsDGV.Size = new System.Drawing.Size(1009, 215);
-            this.ImportItemsDGV.TabIndex = 6;
-            // 
             // PerItemsTabPanel
             // 
             this.PerItemsTabPanel.Controls.Add(this.ImportTab);
@@ -1583,7 +1415,7 @@
             this.ExportTab.HorizontalScrollbarSize = 10;
             this.ExportTab.Location = new System.Drawing.Point(4, 44);
             this.ExportTab.Name = "ExportTab";
-            this.ExportTab.Size = new System.Drawing.Size(1106, 634);
+            this.ExportTab.Size = new System.Drawing.Size(1125, 634);
             this.ExportTab.TabIndex = 1;
             this.ExportTab.Text = "Export";
             this.ExportTab.UseCustomBackColor = true;
@@ -1593,6 +1425,17 @@
             this.ExportTab.VerticalScrollbarBarColor = true;
             this.ExportTab.VerticalScrollbarHighlightOnWheel = false;
             this.ExportTab.VerticalScrollbarSize = 10;
+            // 
+            // ImportDetailsPanel
+            // 
+            this.ImportDetailsPanel.Controls.Add(this.label17);
+            this.ImportDetailsPanel.Controls.Add(this.panel10);
+            this.ImportDetailsPanel.Controls.Add(this.panel11);
+            this.ImportDetailsPanel.Controls.Add(this.panel15);
+            this.ImportDetailsPanel.Location = new System.Drawing.Point(20, 21);
+            this.ImportDetailsPanel.Name = "ImportDetailsPanel";
+            this.ImportDetailsPanel.Size = new System.Drawing.Size(1151, 682);
+            this.ImportDetailsPanel.TabIndex = 9;
             // 
             // label17
             // 
@@ -1605,6 +1448,123 @@
             this.label17.TabIndex = 13;
             this.label17.Text = "Permission Items";
             // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.White;
+            this.panel10.Controls.Add(this.ImportBackBtn);
+            this.panel10.Controls.Add(this.button2);
+            this.panel10.Controls.Add(this.button3);
+            this.panel10.Location = new System.Drawing.Point(694, 418);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(434, 241);
+            this.panel10.TabIndex = 11;
+            // 
+            // ImportBackBtn
+            // 
+            this.ImportBackBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            this.ImportBackBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ImportBackBtn.FlatAppearance.BorderSize = 0;
+            this.ImportBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ImportBackBtn.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ImportBackBtn.ForeColor = System.Drawing.Color.White;
+            this.ImportBackBtn.Location = new System.Drawing.Point(132, 158);
+            this.ImportBackBtn.Name = "ImportBackBtn";
+            this.ImportBackBtn.Size = new System.Drawing.Size(170, 50);
+            this.ImportBackBtn.TabIndex = 0;
+            this.ImportBackBtn.Text = "Back";
+            this.ImportBackBtn.UseVisualStyleBackColor = false;
+            this.ImportBackBtn.Click += new System.EventHandler(this.ImportBackBtn_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(132, 97);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(170, 50);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Update";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(132, 36);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(170, 50);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "Add";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.White;
+            this.panel11.Controls.Add(this.ImportPermissionId);
+            this.panel11.Controls.Add(this.textBox1);
+            this.panel11.Controls.Add(this.ImportItemCodeCB);
+            this.panel11.Controls.Add(this.label1);
+            this.panel11.Controls.Add(this.label16);
+            this.panel11.Controls.Add(this.label15);
+            this.panel11.Location = new System.Drawing.Point(23, 418);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(612, 241);
+            this.panel11.TabIndex = 12;
+            // 
+            // ImportPermissionId
+            // 
+            this.ImportPermissionId.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ImportPermissionId.Location = new System.Drawing.Point(237, 36);
+            this.ImportPermissionId.Name = "ImportPermissionId";
+            this.ImportPermissionId.Size = new System.Drawing.Size(323, 36);
+            this.ImportPermissionId.TabIndex = 6;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(237, 172);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(323, 36);
+            this.textBox1.TabIndex = 6;
+            // 
+            // ImportItemCodeCB
+            // 
+            this.ImportItemCodeCB.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
+            this.ImportItemCodeCB.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ImportItemCodeCB.FormattingEnabled = true;
+            this.ImportItemCodeCB.Location = new System.Drawing.Point(237, 104);
+            this.ImportItemCodeCB.Name = "ImportItemCodeCB";
+            this.ImportItemCodeCB.Size = new System.Drawing.Size(323, 36);
+            this.ImportItemCodeCB.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(53, 108);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 29);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Item Code";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(53, 176);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(99, 29);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "Quantity";
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -1615,13 +1575,53 @@
             this.label15.TabIndex = 2;
             this.label15.Text = "Permission Id";
             // 
-            // ImportPermissionId
+            // panel15
             // 
-            this.ImportPermissionId.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ImportPermissionId.Location = new System.Drawing.Point(237, 36);
-            this.ImportPermissionId.Name = "ImportPermissionId";
-            this.ImportPermissionId.Size = new System.Drawing.Size(323, 36);
-            this.ImportPermissionId.TabIndex = 6;
+            this.panel15.BackColor = System.Drawing.Color.White;
+            this.panel15.Controls.Add(this.ImportItemsDGV);
+            this.panel15.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel15.Location = new System.Drawing.Point(23, 71);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(1105, 309);
+            this.panel15.TabIndex = 10;
+            // 
+            // ImportItemsDGV
+            // 
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ImportItemsDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
+            this.ImportItemsDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.ImportItemsDGV.BackgroundColor = System.Drawing.Color.White;
+            this.ImportItemsDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ImportItemsDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ImportItemsDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            this.ImportItemsDGV.ColumnHeadersHeight = 40;
+            this.ImportItemsDGV.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ImportItemsDGV.EnableHeadersVisualStyles = false;
+            this.ImportItemsDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            this.ImportItemsDGV.Location = new System.Drawing.Point(48, 47);
+            this.ImportItemsDGV.Name = "ImportItemsDGV";
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ImportItemsDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            this.ImportItemsDGV.RowHeadersWidth = 51;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ImportItemsDGV.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            this.ImportItemsDGV.RowTemplate.Height = 26;
+            this.ImportItemsDGV.Size = new System.Drawing.Size(1009, 215);
+            this.ImportItemsDGV.TabIndex = 6;
             // 
             // ReportsPanel
             // 
@@ -1640,32 +1640,6 @@
             this.ReportsPanel.VerticalScrollbarHighlightOnWheel = false;
             this.ReportsPanel.VerticalScrollbarSize = 10;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(66, 124);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 134);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "  Store    Report";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.ReportReviewBtn_Click);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Calibri", 31.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label20.Location = new System.Drawing.Point(43, 75);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(563, 64);
-            this.label20.TabIndex = 4;
-            this.label20.Text = "Warehouse Data Reports";
-            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
@@ -1679,45 +1653,20 @@
             this.panel7.Size = new System.Drawing.Size(1106, 382);
             this.panel7.TabIndex = 9;
             // 
-            // panel16
+            // button8
             // 
-            this.panel16.BackColor = System.Drawing.Color.White;
-            this.panel16.Controls.Add(this.label20);
-            this.panel16.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel16.Location = new System.Drawing.Point(43, 39);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(1105, 215);
-            this.panel16.TabIndex = 8;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(267, 124);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(170, 134);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "  Item    Report";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.ReportReviewBtn_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(870, 124);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(170, 134);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Expirtion Report";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.ReportReviewBtn_Click);
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(468, 124);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(170, 134);
+            this.button8.TabIndex = 3;
+            this.button8.Text = "Transportation Report";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.ReportReviewBtn_Click);
             // 
             // button7
             // 
@@ -1734,20 +1683,71 @@
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.ReportReviewBtn_Click);
             // 
-            // button8
+            // button5
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(468, 124);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(170, 134);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Transportation Report";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.ReportReviewBtn_Click);
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(870, 124);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(170, 134);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "Expirtion Report";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.ReportReviewBtn_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(267, 124);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(170, 134);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "  Item    Report";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.ReportReviewBtn_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(66, 124);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(170, 134);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "  Store    Report";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.ReportReviewBtn_Click);
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.White;
+            this.panel16.Controls.Add(this.label20);
+            this.panel16.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel16.Location = new System.Drawing.Point(43, 39);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(1105, 215);
+            this.panel16.TabIndex = 8;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Calibri", 31.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label20.Location = new System.Drawing.Point(43, 75);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(563, 64);
+            this.label20.TabIndex = 4;
+            this.label20.Text = "Warehouse Data Reports";
             // 
             // ReportReviewPanel
             // 
@@ -1776,17 +1776,6 @@
             this.panel18.Size = new System.Drawing.Size(778, 308);
             this.panel18.TabIndex = 8;
             // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Calibri", 31.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label21.Location = new System.Drawing.Point(116, 82);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(546, 64);
-            this.label21.TabIndex = 4;
-            this.label21.Text = "There are no reports yet";
-            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -1797,6 +1786,17 @@
             this.label22.Size = new System.Drawing.Size(348, 64);
             this.label22.TabIndex = 4;
             this.label22.Text = "to be reviewed";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Calibri", 31.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label21.Location = new System.Drawing.Point(116, 82);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(546, 64);
+            this.label21.TabIndex = 4;
+            this.label21.Text = "There are no reports yet";
             // 
             // Form1
             // 
@@ -1840,13 +1840,6 @@
             this.HomePanel.ResumeLayout(false);
             this.HomePanel.PerformLayout();
             this.PermissionsPanel.ResumeLayout(false);
-            this.ImportDetailsPanel.ResumeLayout(false);
-            this.ImportDetailsPanel.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ImportItemsDGV)).EndInit();
             this.PerItemsTabPanel.ResumeLayout(false);
             this.ImportTab.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
@@ -1854,6 +1847,13 @@
             this.panel14.PerformLayout();
             this.panel12.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ImportListDGV)).EndInit();
+            this.ImportDetailsPanel.ResumeLayout(false);
+            this.ImportDetailsPanel.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ImportItemsDGV)).EndInit();
             this.ReportsPanel.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
