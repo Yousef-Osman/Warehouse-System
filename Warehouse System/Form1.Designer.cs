@@ -29,30 +29,36 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.LogoPanel = new MetroFramework.Controls.MetroPanel();
             this.ReportsBtn = new System.Windows.Forms.Button();
@@ -125,21 +131,21 @@
             this.InterfaceCustomerBtn = new System.Windows.Forms.Button();
             this.InterfaceSupplierBtn = new System.Windows.Forms.Button();
             this.PermissionsPanel = new MetroFramework.Controls.MetroPanel();
-            this.ImportDetailsPanel = new System.Windows.Forms.Panel();
-            this.ImportPermissionItemsLabel = new System.Windows.Forms.Label();
+            this.PermissionDetailsPanel = new System.Windows.Forms.Panel();
+            this.PermissionItemsLabel = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.ImportBackBtn = new System.Windows.Forms.Button();
-            this.ImportUpdateItemBtn = new System.Windows.Forms.Button();
-            this.ImportAddItemBtn = new System.Windows.Forms.Button();
+            this.PermissionBackBtn = new System.Windows.Forms.Button();
+            this.PermissionUpdateItemBtn = new System.Windows.Forms.Button();
+            this.PermissionAddItemBtn = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.ImportItemQtyIUD = new System.Windows.Forms.NumericUpDown();
-            this.ImportPermissionIdTB = new System.Windows.Forms.TextBox();
-            this.ImportItemCodeCB = new System.Windows.Forms.ComboBox();
+            this.PermissionItemQtyIUD = new System.Windows.Forms.NumericUpDown();
+            this.PermissionIdTB = new System.Windows.Forms.TextBox();
+            this.PermissionItemCodeCB = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.ImportItemsDGV = new System.Windows.Forms.DataGridView();
+            this.PermissionItemsDGV = new System.Windows.Forms.DataGridView();
             this.PerItemsTabPanel = new MetroFramework.Controls.MetroTabControl();
             this.ImportTab = new MetroFramework.Controls.MetroTabPage();
             this.label23 = new System.Windows.Forms.Label();
@@ -147,6 +153,8 @@
             this.ImportUpdateBtn = new System.Windows.Forms.Button();
             this.ImportAddBtn = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.ImportPerIdTB = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
             this.ImportStoreIdCB = new System.Windows.Forms.ComboBox();
             this.ImportDateTP = new System.Windows.Forms.DateTimePicker();
             this.label18 = new System.Windows.Forms.Label();
@@ -154,6 +162,19 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.ImportListDGV = new System.Windows.Forms.DataGridView();
             this.ExportTab = new MetroFramework.Controls.MetroTabPage();
+            this.label17 = new System.Windows.Forms.Label();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.ExportUpdateBtn = new System.Windows.Forms.Button();
+            this.ExportAddBtn = new System.Windows.Forms.Button();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.ExportPerIdTB = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.ExportStoreIdCB = new System.Windows.Forms.ComboBox();
+            this.ExportDateTP = new System.Windows.Forms.DateTimePicker();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.ExportListDGV = new System.Windows.Forms.DataGridView();
             this.ReportsPanel = new MetroFramework.Controls.MetroPanel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
@@ -167,17 +188,6 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.ExportStoreIdCB = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.ExportListDGV = new System.Windows.Forms.DataGridView();
             this.metroPanel1.SuspendLayout();
             this.StorePanel.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -195,12 +205,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.SupplierDGV)).BeginInit();
             this.HomePanel.SuspendLayout();
             this.PermissionsPanel.SuspendLayout();
-            this.ImportDetailsPanel.SuspendLayout();
+            this.PermissionDetailsPanel.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImportItemQtyIUD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PermissionItemQtyIUD)).BeginInit();
             this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImportItemsDGV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PermissionItemsDGV)).BeginInit();
             this.PerItemsTabPanel.SuspendLayout();
             this.ImportTab.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -208,15 +218,15 @@
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImportListDGV)).BeginInit();
             this.ExportTab.SuspendLayout();
+            this.panel17.SuspendLayout();
+            this.panel19.SuspendLayout();
+            this.panel20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ExportListDGV)).BeginInit();
             this.ReportsPanel.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel16.SuspendLayout();
             this.ReportReviewPanel.SuspendLayout();
             this.panel18.SuspendLayout();
-            this.panel17.SuspendLayout();
-            this.panel19.SuspendLayout();
-            this.panel20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ExportListDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // metroPanel1
@@ -515,37 +525,45 @@
             // 
             // StoreDGV
             // 
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.StoreDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.StoreDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.StoreDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.StoreDGV.BackgroundColor = System.Drawing.Color.White;
             this.StoreDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.StoreDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.StoreDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.StoreDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.StoreDGV.ColumnHeadersHeight = 40;
             this.StoreDGV.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.PaleTurquoise;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.StoreDGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.StoreDGV.EnableHeadersVisualStyles = false;
             this.StoreDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
             this.StoreDGV.Location = new System.Drawing.Point(91, 86);
             this.StoreDGV.Name = "StoreDGV";
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.StoreDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.StoreDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.StoreDGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.StoreDGV.RowsDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.StoreDGV.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.StoreDGV.RowTemplate.Height = 26;
             this.StoreDGV.Size = new System.Drawing.Size(1009, 215);
             this.StoreDGV.TabIndex = 5;
@@ -764,38 +782,46 @@
             // 
             // ItemDGV
             // 
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ItemDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ItemDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.ItemDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ItemDGV.BackgroundColor = System.Drawing.Color.White;
             this.ItemDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ItemDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ItemDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ItemDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.ItemDGV.ColumnHeadersHeight = 40;
             this.ItemDGV.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.PaleTurquoise;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ItemDGV.DefaultCellStyle = dataGridViewCellStyle8;
             this.ItemDGV.EnableHeadersVisualStyles = false;
             this.ItemDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
             this.ItemDGV.Location = new System.Drawing.Point(48, 47);
             this.ItemDGV.Name = "ItemDGV";
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle31.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ItemDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ItemDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.ItemDGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ItemDGV.RowsDefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ItemDGV.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.ItemDGV.RowTemplate.Height = 26;
             this.ItemDGV.Size = new System.Drawing.Size(1009, 215);
             this.ItemDGV.TabIndex = 6;
@@ -1041,38 +1067,46 @@
             // 
             // SupplierDGV
             // 
-            dataGridViewCellStyle33.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.SupplierDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.SupplierDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.SupplierDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.SupplierDGV.BackgroundColor = System.Drawing.Color.White;
             this.SupplierDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SupplierDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("Calibri", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.SupplierDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Calibri", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.SupplierDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.SupplierDGV.ColumnHeadersHeight = 40;
             this.SupplierDGV.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.PaleTurquoise;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.SupplierDGV.DefaultCellStyle = dataGridViewCellStyle13;
             this.SupplierDGV.EnableHeadersVisualStyles = false;
             this.SupplierDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
             this.SupplierDGV.Location = new System.Drawing.Point(91, 86);
             this.SupplierDGV.Name = "SupplierDGV";
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle35.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.SupplierDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.SupplierDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.SupplierDGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.SupplierDGV.RowsDefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.SupplierDGV.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.SupplierDGV.RowTemplate.Height = 26;
             this.SupplierDGV.Size = new System.Drawing.Size(1009, 215);
             this.SupplierDGV.TabIndex = 5;
@@ -1220,7 +1254,7 @@
             // 
             this.PermissionsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.PermissionsPanel.Controls.Add(this.PerItemsTabPanel);
-            this.PermissionsPanel.Controls.Add(this.ImportDetailsPanel);
+            this.PermissionsPanel.Controls.Add(this.PermissionDetailsPanel);
             this.PermissionsPanel.HorizontalScrollbarBarColor = true;
             this.PermissionsPanel.HorizontalScrollbarHighlightOnWheel = false;
             this.PermissionsPanel.HorizontalScrollbarSize = 10;
@@ -1233,93 +1267,93 @@
             this.PermissionsPanel.VerticalScrollbarHighlightOnWheel = false;
             this.PermissionsPanel.VerticalScrollbarSize = 10;
             // 
-            // ImportDetailsPanel
+            // PermissionDetailsPanel
             // 
-            this.ImportDetailsPanel.Controls.Add(this.ImportPermissionItemsLabel);
-            this.ImportDetailsPanel.Controls.Add(this.panel10);
-            this.ImportDetailsPanel.Controls.Add(this.panel11);
-            this.ImportDetailsPanel.Controls.Add(this.panel15);
-            this.ImportDetailsPanel.Location = new System.Drawing.Point(20, 21);
-            this.ImportDetailsPanel.Name = "ImportDetailsPanel";
-            this.ImportDetailsPanel.Size = new System.Drawing.Size(1151, 682);
-            this.ImportDetailsPanel.TabIndex = 9;
+            this.PermissionDetailsPanel.Controls.Add(this.PermissionItemsLabel);
+            this.PermissionDetailsPanel.Controls.Add(this.panel10);
+            this.PermissionDetailsPanel.Controls.Add(this.panel11);
+            this.PermissionDetailsPanel.Controls.Add(this.panel15);
+            this.PermissionDetailsPanel.Location = new System.Drawing.Point(20, 21);
+            this.PermissionDetailsPanel.Name = "PermissionDetailsPanel";
+            this.PermissionDetailsPanel.Size = new System.Drawing.Size(1151, 682);
+            this.PermissionDetailsPanel.TabIndex = 9;
             // 
-            // ImportPermissionItemsLabel
+            // PermissionItemsLabel
             // 
-            this.ImportPermissionItemsLabel.AutoSize = true;
-            this.ImportPermissionItemsLabel.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ImportPermissionItemsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            this.ImportPermissionItemsLabel.Location = new System.Drawing.Point(16, 8);
-            this.ImportPermissionItemsLabel.Name = "ImportPermissionItemsLabel";
-            this.ImportPermissionItemsLabel.Size = new System.Drawing.Size(214, 35);
-            this.ImportPermissionItemsLabel.TabIndex = 13;
-            this.ImportPermissionItemsLabel.Text = "Permission Items";
+            this.PermissionItemsLabel.AutoSize = true;
+            this.PermissionItemsLabel.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PermissionItemsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            this.PermissionItemsLabel.Location = new System.Drawing.Point(16, 8);
+            this.PermissionItemsLabel.Name = "PermissionItemsLabel";
+            this.PermissionItemsLabel.Size = new System.Drawing.Size(214, 35);
+            this.PermissionItemsLabel.TabIndex = 13;
+            this.PermissionItemsLabel.Text = "Permission Items";
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Controls.Add(this.ImportBackBtn);
-            this.panel10.Controls.Add(this.ImportUpdateItemBtn);
-            this.panel10.Controls.Add(this.ImportAddItemBtn);
+            this.panel10.Controls.Add(this.PermissionBackBtn);
+            this.panel10.Controls.Add(this.PermissionUpdateItemBtn);
+            this.panel10.Controls.Add(this.PermissionAddItemBtn);
             this.panel10.Location = new System.Drawing.Point(694, 418);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(434, 241);
             this.panel10.TabIndex = 11;
             // 
-            // ImportBackBtn
+            // PermissionBackBtn
             // 
-            this.ImportBackBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            this.ImportBackBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ImportBackBtn.FlatAppearance.BorderSize = 0;
-            this.ImportBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ImportBackBtn.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ImportBackBtn.ForeColor = System.Drawing.Color.White;
-            this.ImportBackBtn.Location = new System.Drawing.Point(132, 156);
-            this.ImportBackBtn.Name = "ImportBackBtn";
-            this.ImportBackBtn.Size = new System.Drawing.Size(170, 50);
-            this.ImportBackBtn.TabIndex = 0;
-            this.ImportBackBtn.Text = "Back";
-            this.ImportBackBtn.UseVisualStyleBackColor = false;
-            this.ImportBackBtn.Click += new System.EventHandler(this.ImportBackBtn_Click);
+            this.PermissionBackBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            this.PermissionBackBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PermissionBackBtn.FlatAppearance.BorderSize = 0;
+            this.PermissionBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PermissionBackBtn.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PermissionBackBtn.ForeColor = System.Drawing.Color.White;
+            this.PermissionBackBtn.Location = new System.Drawing.Point(132, 156);
+            this.PermissionBackBtn.Name = "PermissionBackBtn";
+            this.PermissionBackBtn.Size = new System.Drawing.Size(170, 50);
+            this.PermissionBackBtn.TabIndex = 0;
+            this.PermissionBackBtn.Text = "Back";
+            this.PermissionBackBtn.UseVisualStyleBackColor = false;
+            this.PermissionBackBtn.Click += new System.EventHandler(this.ImportBackBtn_Click);
             // 
-            // ImportUpdateItemBtn
+            // PermissionUpdateItemBtn
             // 
-            this.ImportUpdateItemBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            this.ImportUpdateItemBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ImportUpdateItemBtn.FlatAppearance.BorderSize = 0;
-            this.ImportUpdateItemBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ImportUpdateItemBtn.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ImportUpdateItemBtn.ForeColor = System.Drawing.Color.White;
-            this.ImportUpdateItemBtn.Location = new System.Drawing.Point(132, 96);
-            this.ImportUpdateItemBtn.Name = "ImportUpdateItemBtn";
-            this.ImportUpdateItemBtn.Size = new System.Drawing.Size(170, 50);
-            this.ImportUpdateItemBtn.TabIndex = 0;
-            this.ImportUpdateItemBtn.Text = "Update";
-            this.ImportUpdateItemBtn.UseVisualStyleBackColor = false;
-            this.ImportUpdateItemBtn.Click += new System.EventHandler(this.ImportAddItemBtn_Click);
+            this.PermissionUpdateItemBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            this.PermissionUpdateItemBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PermissionUpdateItemBtn.FlatAppearance.BorderSize = 0;
+            this.PermissionUpdateItemBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PermissionUpdateItemBtn.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PermissionUpdateItemBtn.ForeColor = System.Drawing.Color.White;
+            this.PermissionUpdateItemBtn.Location = new System.Drawing.Point(132, 96);
+            this.PermissionUpdateItemBtn.Name = "PermissionUpdateItemBtn";
+            this.PermissionUpdateItemBtn.Size = new System.Drawing.Size(170, 50);
+            this.PermissionUpdateItemBtn.TabIndex = 0;
+            this.PermissionUpdateItemBtn.Text = "Update";
+            this.PermissionUpdateItemBtn.UseVisualStyleBackColor = false;
+            this.PermissionUpdateItemBtn.Click += new System.EventHandler(this.ImportAddItemBtn_Click);
             // 
-            // ImportAddItemBtn
+            // PermissionAddItemBtn
             // 
-            this.ImportAddItemBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            this.ImportAddItemBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ImportAddItemBtn.FlatAppearance.BorderSize = 0;
-            this.ImportAddItemBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ImportAddItemBtn.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ImportAddItemBtn.ForeColor = System.Drawing.Color.White;
-            this.ImportAddItemBtn.Location = new System.Drawing.Point(132, 36);
-            this.ImportAddItemBtn.Name = "ImportAddItemBtn";
-            this.ImportAddItemBtn.Size = new System.Drawing.Size(170, 50);
-            this.ImportAddItemBtn.TabIndex = 0;
-            this.ImportAddItemBtn.Text = "Add";
-            this.ImportAddItemBtn.UseVisualStyleBackColor = false;
-            this.ImportAddItemBtn.Click += new System.EventHandler(this.ImportAddItemBtn_Click);
+            this.PermissionAddItemBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            this.PermissionAddItemBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PermissionAddItemBtn.FlatAppearance.BorderSize = 0;
+            this.PermissionAddItemBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PermissionAddItemBtn.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PermissionAddItemBtn.ForeColor = System.Drawing.Color.White;
+            this.PermissionAddItemBtn.Location = new System.Drawing.Point(132, 36);
+            this.PermissionAddItemBtn.Name = "PermissionAddItemBtn";
+            this.PermissionAddItemBtn.Size = new System.Drawing.Size(170, 50);
+            this.PermissionAddItemBtn.TabIndex = 0;
+            this.PermissionAddItemBtn.Text = "Add";
+            this.PermissionAddItemBtn.UseVisualStyleBackColor = false;
+            this.PermissionAddItemBtn.Click += new System.EventHandler(this.ImportAddItemBtn_Click);
             // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.White;
-            this.panel11.Controls.Add(this.ImportItemQtyIUD);
-            this.panel11.Controls.Add(this.ImportPermissionIdTB);
-            this.panel11.Controls.Add(this.ImportItemCodeCB);
+            this.panel11.Controls.Add(this.PermissionItemQtyIUD);
+            this.panel11.Controls.Add(this.PermissionIdTB);
+            this.panel11.Controls.Add(this.PermissionItemCodeCB);
             this.panel11.Controls.Add(this.label1);
             this.panel11.Controls.Add(this.label16);
             this.panel11.Controls.Add(this.label15);
@@ -1328,32 +1362,32 @@
             this.panel11.Size = new System.Drawing.Size(612, 241);
             this.panel11.TabIndex = 12;
             // 
-            // ImportItemQtyIUD
+            // PermissionItemQtyIUD
             // 
-            this.ImportItemQtyIUD.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ImportItemQtyIUD.Location = new System.Drawing.Point(237, 170);
-            this.ImportItemQtyIUD.Name = "ImportItemQtyIUD";
-            this.ImportItemQtyIUD.Size = new System.Drawing.Size(323, 36);
-            this.ImportItemQtyIUD.TabIndex = 7;
+            this.PermissionItemQtyIUD.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PermissionItemQtyIUD.Location = new System.Drawing.Point(237, 170);
+            this.PermissionItemQtyIUD.Name = "PermissionItemQtyIUD";
+            this.PermissionItemQtyIUD.Size = new System.Drawing.Size(323, 36);
+            this.PermissionItemQtyIUD.TabIndex = 7;
             // 
-            // ImportPermissionIdTB
+            // PermissionIdTB
             // 
-            this.ImportPermissionIdTB.Enabled = false;
-            this.ImportPermissionIdTB.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ImportPermissionIdTB.Location = new System.Drawing.Point(237, 36);
-            this.ImportPermissionIdTB.Name = "ImportPermissionIdTB";
-            this.ImportPermissionIdTB.Size = new System.Drawing.Size(323, 36);
-            this.ImportPermissionIdTB.TabIndex = 6;
+            this.PermissionIdTB.Enabled = false;
+            this.PermissionIdTB.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PermissionIdTB.Location = new System.Drawing.Point(237, 36);
+            this.PermissionIdTB.Name = "PermissionIdTB";
+            this.PermissionIdTB.Size = new System.Drawing.Size(323, 36);
+            this.PermissionIdTB.TabIndex = 6;
             // 
-            // ImportItemCodeCB
+            // PermissionItemCodeCB
             // 
-            this.ImportItemCodeCB.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
-            this.ImportItemCodeCB.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ImportItemCodeCB.FormattingEnabled = true;
-            this.ImportItemCodeCB.Location = new System.Drawing.Point(237, 104);
-            this.ImportItemCodeCB.Name = "ImportItemCodeCB";
-            this.ImportItemCodeCB.Size = new System.Drawing.Size(323, 36);
-            this.ImportItemCodeCB.TabIndex = 5;
+            this.PermissionItemCodeCB.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
+            this.PermissionItemCodeCB.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PermissionItemCodeCB.FormattingEnabled = true;
+            this.PermissionItemCodeCB.Location = new System.Drawing.Point(237, 104);
+            this.PermissionItemCodeCB.Name = "PermissionItemCodeCB";
+            this.PermissionItemCodeCB.Size = new System.Drawing.Size(323, 36);
+            this.PermissionItemCodeCB.TabIndex = 5;
             // 
             // label1
             // 
@@ -1388,51 +1422,59 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.White;
-            this.panel15.Controls.Add(this.ImportItemsDGV);
+            this.panel15.Controls.Add(this.PermissionItemsDGV);
             this.panel15.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel15.Location = new System.Drawing.Point(23, 71);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(1105, 309);
             this.panel15.TabIndex = 10;
             // 
-            // ImportItemsDGV
+            // PermissionItemsDGV
             // 
-            dataGridViewCellStyle37.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ImportItemsDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle37;
-            this.ImportItemsDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.ImportItemsDGV.BackgroundColor = System.Drawing.Color.White;
-            this.ImportItemsDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ImportItemsDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ImportItemsDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle38;
-            this.ImportItemsDGV.ColumnHeadersHeight = 40;
-            this.ImportItemsDGV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ImportItemsDGV.EnableHeadersVisualStyles = false;
-            this.ImportItemsDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            this.ImportItemsDGV.Location = new System.Drawing.Point(48, 47);
-            this.ImportItemsDGV.Name = "ImportItemsDGV";
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle39.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ImportItemsDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle39;
-            this.ImportItemsDGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ImportItemsDGV.RowsDefaultCellStyle = dataGridViewCellStyle40;
-            this.ImportItemsDGV.RowTemplate.Height = 26;
-            this.ImportItemsDGV.Size = new System.Drawing.Size(1009, 215);
-            this.ImportItemsDGV.TabIndex = 6;
-            this.ImportItemsDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ImportItemsDGV_CellContentClick);
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PermissionItemsDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle26;
+            this.PermissionItemsDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.PermissionItemsDGV.BackgroundColor = System.Drawing.Color.White;
+            this.PermissionItemsDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PermissionItemsDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PermissionItemsDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle27;
+            this.PermissionItemsDGV.ColumnHeadersHeight = 40;
+            this.PermissionItemsDGV.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.PaleTurquoise;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.PermissionItemsDGV.DefaultCellStyle = dataGridViewCellStyle28;
+            this.PermissionItemsDGV.EnableHeadersVisualStyles = false;
+            this.PermissionItemsDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            this.PermissionItemsDGV.Location = new System.Drawing.Point(48, 47);
+            this.PermissionItemsDGV.Name = "PermissionItemsDGV";
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PermissionItemsDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            this.PermissionItemsDGV.RowHeadersWidth = 51;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PermissionItemsDGV.RowsDefaultCellStyle = dataGridViewCellStyle30;
+            this.PermissionItemsDGV.RowTemplate.Height = 26;
+            this.PermissionItemsDGV.Size = new System.Drawing.Size(1009, 215);
+            this.PermissionItemsDGV.TabIndex = 6;
+            this.PermissionItemsDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ImportItemsDGV_CellContentClick);
             // 
             // PerItemsTabPanel
             // 
@@ -1443,7 +1485,7 @@
             this.PerItemsTabPanel.FontWeight = MetroFramework.MetroTabControlWeight.Regular;
             this.PerItemsTabPanel.Location = new System.Drawing.Point(35, 21);
             this.PerItemsTabPanel.Name = "PerItemsTabPanel";
-            this.PerItemsTabPanel.SelectedIndex = 1;
+            this.PerItemsTabPanel.SelectedIndex = 0;
             this.PerItemsTabPanel.Size = new System.Drawing.Size(1133, 682);
             this.PerItemsTabPanel.Style = MetroFramework.MetroColorStyle.Teal;
             this.PerItemsTabPanel.TabIndex = 8;
@@ -1490,9 +1532,9 @@
             this.panel13.BackColor = System.Drawing.Color.White;
             this.panel13.Controls.Add(this.ImportUpdateBtn);
             this.panel13.Controls.Add(this.ImportAddBtn);
-            this.panel13.Location = new System.Drawing.Point(690, 367);
+            this.panel13.Location = new System.Drawing.Point(675, 376);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(420, 241);
+            this.panel13.Size = new System.Drawing.Size(435, 241);
             this.panel13.TabIndex = 8;
             // 
             // ImportUpdateBtn
@@ -1509,6 +1551,7 @@
             this.ImportUpdateBtn.TabIndex = 0;
             this.ImportUpdateBtn.Text = "Update";
             this.ImportUpdateBtn.UseVisualStyleBackColor = false;
+            this.ImportUpdateBtn.Click += new System.EventHandler(this.ImportAddBtn_Click);
             // 
             // ImportAddBtn
             // 
@@ -1529,21 +1572,42 @@
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.White;
+            this.panel14.Controls.Add(this.ImportPerIdTB);
+            this.panel14.Controls.Add(this.label26);
             this.panel14.Controls.Add(this.ImportStoreIdCB);
             this.panel14.Controls.Add(this.ImportDateTP);
             this.panel14.Controls.Add(this.label18);
             this.panel14.Controls.Add(this.label19);
-            this.panel14.Location = new System.Drawing.Point(6, 367);
+            this.panel14.Location = new System.Drawing.Point(4, 374);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(625, 241);
+            this.panel14.Size = new System.Drawing.Size(612, 243);
             this.panel14.TabIndex = 9;
+            // 
+            // ImportPerIdTB
+            // 
+            this.ImportPerIdTB.Enabled = false;
+            this.ImportPerIdTB.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ImportPerIdTB.Location = new System.Drawing.Point(237, 36);
+            this.ImportPerIdTB.Name = "ImportPerIdTB";
+            this.ImportPerIdTB.Size = new System.Drawing.Size(323, 36);
+            this.ImportPerIdTB.TabIndex = 8;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(53, 39);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(144, 29);
+            this.label26.TabIndex = 7;
+            this.label26.Text = "Permission Id";
             // 
             // ImportStoreIdCB
             // 
             this.ImportStoreIdCB.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
             this.ImportStoreIdCB.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ImportStoreIdCB.FormattingEnabled = true;
-            this.ImportStoreIdCB.Location = new System.Drawing.Point(237, 58);
+            this.ImportStoreIdCB.Location = new System.Drawing.Point(237, 105);
             this.ImportStoreIdCB.Name = "ImportStoreIdCB";
             this.ImportStoreIdCB.Size = new System.Drawing.Size(323, 36);
             this.ImportStoreIdCB.TabIndex = 4;
@@ -1551,7 +1615,7 @@
             // ImportDateTP
             // 
             this.ImportDateTP.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ImportDateTP.Location = new System.Drawing.Point(237, 146);
+            this.ImportDateTP.Location = new System.Drawing.Point(237, 170);
             this.ImportDateTP.Name = "ImportDateTP";
             this.ImportDateTP.Size = new System.Drawing.Size(323, 36);
             this.ImportDateTP.TabIndex = 3;
@@ -1560,7 +1624,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(53, 146);
+            this.label18.Location = new System.Drawing.Point(53, 175);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(172, 29);
             this.label18.TabIndex = 2;
@@ -1570,7 +1634,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(53, 58);
+            this.label19.Location = new System.Drawing.Point(53, 107);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(89, 29);
             this.label19.TabIndex = 2;
@@ -1583,46 +1647,55 @@
             this.panel12.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel12.Location = new System.Drawing.Point(4, 66);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(1106, 261);
+            this.panel12.Size = new System.Drawing.Size(1106, 270);
             this.panel12.TabIndex = 7;
             // 
             // ImportListDGV
             // 
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ImportListDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ImportListDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             this.ImportListDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ImportListDGV.BackgroundColor = System.Drawing.Color.White;
             this.ImportListDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ImportListDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle42.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ImportListDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ImportListDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.ImportListDGV.ColumnHeadersHeight = 40;
             this.ImportListDGV.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.PaleTurquoise;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ImportListDGV.DefaultCellStyle = dataGridViewCellStyle18;
             this.ImportListDGV.EnableHeadersVisualStyles = false;
             this.ImportListDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
             this.ImportListDGV.Location = new System.Drawing.Point(48, 27);
             this.ImportListDGV.Name = "ImportListDGV";
-            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle43.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle43.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle43.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ImportListDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle43;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ImportListDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
             this.ImportListDGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle44.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ImportListDGV.RowsDefaultCellStyle = dataGridViewCellStyle44;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ImportListDGV.RowsDefaultCellStyle = dataGridViewCellStyle20;
             this.ImportListDGV.RowTemplate.Height = 26;
             this.ImportListDGV.Size = new System.Drawing.Size(1009, 206);
             this.ImportListDGV.TabIndex = 6;
+            this.ImportListDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ImportListDGV_CellContentClick);
             this.ImportListDGV.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ImportListDGV_CellContentDoubleClick);
             // 
             // ExportTab
@@ -1647,6 +1720,188 @@
             this.ExportTab.VerticalScrollbarBarColor = true;
             this.ExportTab.VerticalScrollbarHighlightOnWheel = false;
             this.ExportTab.VerticalScrollbarSize = 10;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            this.label17.Location = new System.Drawing.Point(-2, 14);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(558, 35);
+            this.label17.TabIndex = 18;
+            this.label17.Text = "Double click on any row To view the full details";
+            // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.White;
+            this.panel17.Controls.Add(this.ExportUpdateBtn);
+            this.panel17.Controls.Add(this.ExportAddBtn);
+            this.panel17.Location = new System.Drawing.Point(675, 376);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(435, 241);
+            this.panel17.TabIndex = 16;
+            // 
+            // ExportUpdateBtn
+            // 
+            this.ExportUpdateBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            this.ExportUpdateBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExportUpdateBtn.FlatAppearance.BorderSize = 0;
+            this.ExportUpdateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExportUpdateBtn.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExportUpdateBtn.ForeColor = System.Drawing.Color.White;
+            this.ExportUpdateBtn.Location = new System.Drawing.Point(125, 133);
+            this.ExportUpdateBtn.Name = "ExportUpdateBtn";
+            this.ExportUpdateBtn.Size = new System.Drawing.Size(170, 50);
+            this.ExportUpdateBtn.TabIndex = 0;
+            this.ExportUpdateBtn.Text = "Update";
+            this.ExportUpdateBtn.UseVisualStyleBackColor = false;
+            this.ExportUpdateBtn.Click += new System.EventHandler(this.EXportAddBtn_Click);
+            // 
+            // ExportAddBtn
+            // 
+            this.ExportAddBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            this.ExportAddBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExportAddBtn.FlatAppearance.BorderSize = 0;
+            this.ExportAddBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExportAddBtn.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExportAddBtn.ForeColor = System.Drawing.Color.White;
+            this.ExportAddBtn.Location = new System.Drawing.Point(125, 58);
+            this.ExportAddBtn.Name = "ExportAddBtn";
+            this.ExportAddBtn.Size = new System.Drawing.Size(170, 50);
+            this.ExportAddBtn.TabIndex = 0;
+            this.ExportAddBtn.Text = "Add";
+            this.ExportAddBtn.UseVisualStyleBackColor = false;
+            this.ExportAddBtn.Click += new System.EventHandler(this.EXportAddBtn_Click);
+            // 
+            // panel19
+            // 
+            this.panel19.BackColor = System.Drawing.Color.White;
+            this.panel19.Controls.Add(this.ExportPerIdTB);
+            this.panel19.Controls.Add(this.label27);
+            this.panel19.Controls.Add(this.label28);
+            this.panel19.Controls.Add(this.label29);
+            this.panel19.Controls.Add(this.ExportStoreIdCB);
+            this.panel19.Controls.Add(this.ExportDateTP);
+            this.panel19.Location = new System.Drawing.Point(4, 374);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(612, 243);
+            this.panel19.TabIndex = 17;
+            // 
+            // ExportPerIdTB
+            // 
+            this.ExportPerIdTB.Enabled = false;
+            this.ExportPerIdTB.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExportPerIdTB.Location = new System.Drawing.Point(237, 37);
+            this.ExportPerIdTB.Name = "ExportPerIdTB";
+            this.ExportPerIdTB.Size = new System.Drawing.Size(323, 36);
+            this.ExportPerIdTB.TabIndex = 14;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(53, 40);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(144, 29);
+            this.label27.TabIndex = 13;
+            this.label27.Text = "Permission Id";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(53, 176);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(172, 29);
+            this.label28.TabIndex = 9;
+            this.label28.Text = "Permission Date";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(53, 108);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(89, 29);
+            this.label29.TabIndex = 10;
+            this.label29.Text = "Store Id";
+            // 
+            // ExportStoreIdCB
+            // 
+            this.ExportStoreIdCB.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
+            this.ExportStoreIdCB.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExportStoreIdCB.FormattingEnabled = true;
+            this.ExportStoreIdCB.Location = new System.Drawing.Point(237, 106);
+            this.ExportStoreIdCB.Name = "ExportStoreIdCB";
+            this.ExportStoreIdCB.Size = new System.Drawing.Size(323, 36);
+            this.ExportStoreIdCB.TabIndex = 4;
+            // 
+            // ExportDateTP
+            // 
+            this.ExportDateTP.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExportDateTP.Location = new System.Drawing.Point(237, 171);
+            this.ExportDateTP.Name = "ExportDateTP";
+            this.ExportDateTP.Size = new System.Drawing.Size(323, 36);
+            this.ExportDateTP.TabIndex = 3;
+            // 
+            // panel20
+            // 
+            this.panel20.BackColor = System.Drawing.Color.White;
+            this.panel20.Controls.Add(this.ExportListDGV);
+            this.panel20.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel20.Location = new System.Drawing.Point(4, 66);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(1107, 270);
+            this.panel20.TabIndex = 15;
+            // 
+            // ExportListDGV
+            // 
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ExportListDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
+            this.ExportListDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.ExportListDGV.BackgroundColor = System.Drawing.Color.White;
+            this.ExportListDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ExportListDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ExportListDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
+            this.ExportListDGV.ColumnHeadersHeight = 40;
+            this.ExportListDGV.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.PaleTurquoise;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ExportListDGV.DefaultCellStyle = dataGridViewCellStyle23;
+            this.ExportListDGV.EnableHeadersVisualStyles = false;
+            this.ExportListDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
+            this.ExportListDGV.Location = new System.Drawing.Point(48, 27);
+            this.ExportListDGV.Name = "ExportListDGV";
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ExportListDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
+            this.ExportListDGV.RowHeadersWidth = 51;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ExportListDGV.RowsDefaultCellStyle = dataGridViewCellStyle25;
+            this.ExportListDGV.RowTemplate.Height = 26;
+            this.ExportListDGV.Size = new System.Drawing.Size(1009, 206);
+            this.ExportListDGV.TabIndex = 6;
+            this.ExportListDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EXportListDGV_CellContentClick);
+            this.ExportListDGV.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EXportListDGV_CellContentDoubleClick);
             // 
             // ReportsPanel
             // 
@@ -1823,155 +2078,6 @@
             this.label21.TabIndex = 4;
             this.label21.Text = "There are no reports yet";
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            this.label17.Location = new System.Drawing.Point(-2, 14);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(558, 35);
-            this.label17.TabIndex = 18;
-            this.label17.Text = "Double click on any row To view the full details";
-            // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.White;
-            this.panel17.Controls.Add(this.button2);
-            this.panel17.Controls.Add(this.button3);
-            this.panel17.Location = new System.Drawing.Point(690, 367);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(420, 241);
-            this.panel17.TabIndex = 16;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(125, 133);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(170, 50);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(125, 58);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(170, 50);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Add";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // panel19
-            // 
-            this.panel19.BackColor = System.Drawing.Color.White;
-            this.panel19.Controls.Add(this.ExportStoreIdCB);
-            this.panel19.Controls.Add(this.dateTimePicker1);
-            this.panel19.Controls.Add(this.label24);
-            this.panel19.Controls.Add(this.label25);
-            this.panel19.Location = new System.Drawing.Point(6, 367);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(625, 241);
-            this.panel19.TabIndex = 17;
-            // 
-            // ExportStoreIdCB
-            // 
-            this.ExportStoreIdCB.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
-            this.ExportStoreIdCB.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExportStoreIdCB.FormattingEnabled = true;
-            this.ExportStoreIdCB.Location = new System.Drawing.Point(237, 58);
-            this.ExportStoreIdCB.Name = "ExportStoreIdCB";
-            this.ExportStoreIdCB.Size = new System.Drawing.Size(323, 36);
-            this.ExportStoreIdCB.TabIndex = 4;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(237, 146);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(323, 36);
-            this.dateTimePicker1.TabIndex = 3;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(53, 146);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(172, 29);
-            this.label24.TabIndex = 2;
-            this.label24.Text = "Permission Date";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(53, 58);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(89, 29);
-            this.label25.TabIndex = 2;
-            this.label25.Text = "Store Id";
-            // 
-            // panel20
-            // 
-            this.panel20.BackColor = System.Drawing.Color.White;
-            this.panel20.Controls.Add(this.ExportListDGV);
-            this.panel20.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel20.Location = new System.Drawing.Point(4, 66);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(1106, 261);
-            this.panel20.TabIndex = 15;
-            // 
-            // ExportListDGV
-            // 
-            dataGridViewCellStyle45.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ExportListDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle45;
-            this.ExportListDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.ExportListDGV.BackgroundColor = System.Drawing.Color.White;
-            this.ExportListDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ExportListDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            dataGridViewCellStyle46.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle46.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ExportListDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle46;
-            this.ExportListDGV.ColumnHeadersHeight = 40;
-            this.ExportListDGV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ExportListDGV.EnableHeadersVisualStyles = false;
-            this.ExportListDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
-            this.ExportListDGV.Location = new System.Drawing.Point(48, 27);
-            this.ExportListDGV.Name = "ExportListDGV";
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle47.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle47.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle47.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ExportListDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle47;
-            this.ExportListDGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle48.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ExportListDGV.RowsDefaultCellStyle = dataGridViewCellStyle48;
-            this.ExportListDGV.RowTemplate.Height = 26;
-            this.ExportListDGV.Size = new System.Drawing.Size(1009, 206);
-            this.ExportListDGV.TabIndex = 6;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -2013,14 +2119,14 @@
             this.HomePanel.ResumeLayout(false);
             this.HomePanel.PerformLayout();
             this.PermissionsPanel.ResumeLayout(false);
-            this.ImportDetailsPanel.ResumeLayout(false);
-            this.ImportDetailsPanel.PerformLayout();
+            this.PermissionDetailsPanel.ResumeLayout(false);
+            this.PermissionDetailsPanel.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImportItemQtyIUD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PermissionItemQtyIUD)).EndInit();
             this.panel15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ImportItemsDGV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PermissionItemsDGV)).EndInit();
             this.PerItemsTabPanel.ResumeLayout(false);
             this.ImportTab.ResumeLayout(false);
             this.ImportTab.PerformLayout();
@@ -2031,6 +2137,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImportListDGV)).EndInit();
             this.ExportTab.ResumeLayout(false);
             this.ExportTab.PerformLayout();
+            this.panel17.ResumeLayout(false);
+            this.panel19.ResumeLayout(false);
+            this.panel19.PerformLayout();
+            this.panel20.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ExportListDGV)).EndInit();
             this.ReportsPanel.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
@@ -2038,11 +2149,6 @@
             this.ReportReviewPanel.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
-            this.panel17.ResumeLayout(false);
-            this.panel19.ResumeLayout(false);
-            this.panel19.PerformLayout();
-            this.panel20.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ExportListDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2136,18 +2242,18 @@
         private System.Windows.Forms.ComboBox ImportStoreIdCB;
         private System.Windows.Forms.DateTimePicker ImportDateTP;
         private MetroFramework.Controls.MetroTabPage ExportTab;
-        private System.Windows.Forms.Panel ImportDetailsPanel;
+        private System.Windows.Forms.Panel PermissionDetailsPanel;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Button ImportBackBtn;
-        private System.Windows.Forms.Button ImportAddItemBtn;
+        private System.Windows.Forms.Button PermissionBackBtn;
+        private System.Windows.Forms.Button PermissionAddItemBtn;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.ComboBox ImportItemCodeCB;
+        private System.Windows.Forms.ComboBox PermissionItemCodeCB;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.DataGridView ImportItemsDGV;
-        private System.Windows.Forms.Label ImportPermissionItemsLabel;
-        private System.Windows.Forms.TextBox ImportPermissionIdTB;
+        private System.Windows.Forms.DataGridView PermissionItemsDGV;
+        private System.Windows.Forms.Label PermissionItemsLabel;
+        private System.Windows.Forms.TextBox PermissionIdTB;
         private System.Windows.Forms.Label label15;
         private MetroFramework.Controls.MetroPanel ReportsPanel;
         private System.Windows.Forms.Panel panel7;
@@ -2162,20 +2268,24 @@
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.NumericUpDown ImportItemQtyIUD;
-        private System.Windows.Forms.Button ImportUpdateItemBtn;
+        private System.Windows.Forms.NumericUpDown PermissionItemQtyIUD;
+        private System.Windows.Forms.Button PermissionUpdateItemBtn;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button ExportUpdateBtn;
+        private System.Windows.Forms.Button ExportAddBtn;
         private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.ComboBox ExportStoreIdCB;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.DateTimePicker ExportDateTP;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.DataGridView ExportListDGV;
+        private System.Windows.Forms.TextBox ImportPerIdTB;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox ExportPerIdTB;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.ComboBox ExportStoreIdCB;
     }
 }
 
